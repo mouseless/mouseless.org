@@ -53,6 +53,10 @@ const count = computed(() => items.length);
     &__item:has(img.prose:only-child) {
       display: none;
     }
+
+    &__item:has(.mermaid) {
+      display: none;
+    }
   }
 }
 </style>

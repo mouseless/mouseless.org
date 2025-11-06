@@ -180,7 +180,8 @@ dedicated work.
 
 ```mermaid
 flowchart TB
-    2([ ]) --Senior--> 3([ ])
+    1([ ]) --Junior--> 2([ ])
+    2 --Senior--> 3([ ])
     3 --Lead--> 4([ ])
     4 --Principal--> 5([ ])
 ```

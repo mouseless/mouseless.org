@@ -1,32 +1,24 @@
-.PHONY: run build
+.PHONY: install format run build
 
+install:
+	@(cd .theme && npm i && npm ci)
+format:
+	@(cd .theme && npx eslint . --fix)
 run:
-	@ \
-	echo "(1) Dev" ; \
-	echo "(2) Local" ; \
-	echo "(3) Eslint Fix" ; \
-	echo "" ; \
-	echo "Please select 1-3: " ; \
-	read srv ; \
-	if test $$srv -eq "1" ; then \
-		cd .theme ; npm run dev ; cd .. ; \
-	fi ; \
-	if test $$srv -eq "2" ; then \
-		cd .theme ; npm run local ; cd .. ; \
-	fi ; \
-	if test $$srv -eq "3" ; then \
-		cd .theme ; npx eslint . --fix ; cd .. ; \
-	fi
+	@echo "(1) Development"
+	@echo "(2) Local"
+	@read -p "Please select 1-2: " app ; \
+	case $$app in \
+		1) (cd .theme && npm run dev && cd ..) ;; \
+		2) (cd .theme && npm run local && cd ..) ;; \
+		*) echo "Invalid option" ;; \
+	esac
 build:
-	@ \
-	echo "(1) Local" ; \
-	echo "(2) Production" ; \
-	echo "" ; \
-	echo "Please select 1-2: " ; \
-	read srv ; \
-	if test $$srv -eq "1" ; then \
-		cd .theme ; npm run generate:local ; cd .. ; \
-	fi ; \
-	if test $$srv -eq "2" ; then \
-		cd .theme ; npm run generate:production ; cd .. ; \
-	fi
+	@echo "(1) Local"
+	@echo "(2) Production"
+	@read -p "Please select 1-2: " app ; \
+	case $$app in \
+		1) (cd .theme && npm run generate:local && cd ..) ;; \
+		2) (cd .theme && npm run generate:production && cd ..) ;; \
+		*) echo "Invalid option" ;; \
+	esac
