@@ -22,8 +22,7 @@ onMounted(async() => {
     mermaidContainer.value.textContent = content;
 
     await $mermaid.run({ nodes: [mermaidContainer.value] });
-  }
-  catch {
+  } catch {
     mermaidContainer.value.innerHTML = "";
   }
 });
@@ -31,5 +30,11 @@ onMounted(async() => {
 <style>
 .mermaid:not([data-processed]) {
   color: transparent;
+}
+.mermaid {
+  padding: var(--space-sm);
+  border-radius: var(--border-radius);
+  background-color: var(--color-darkgreen-800);
+  text-align: center;
 }
 </style>
