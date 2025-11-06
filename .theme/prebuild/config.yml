@@ -32,37 +32,6 @@ tasks:
   - copy:
       source: ./.theme/public
       target: ./.theme/.public
-
-  # # Extract diagrams
-  # - extractDiagrams:
-  #     source: ./
-  #     target: ./.theme/.temp
-  #     config:
-  #       backgroundColor: '#092C2E'
-  #       outputFormat: svg
-  #       theme: base
-  #       deviceScaleFactor: 1
-  #       headless: new
-  #       flowchart:
-  #         useMaxWidth: false
-  #       quadrantChart:
-  #         xAxisPosition: 'bottom'
-  #       themeVariables:
-  #         primaryColor: '#FA465B'
-  #         primaryTextColor: '#F7F7F7'
-  #         primaryBorderColor': '#FA465B'
-  #         lineColor: '#D5DBDB'
-  #         secondaryColor: '#031819'
-  #         secondaryTextColor: '#E9EBEB'
-  #         secondaryBorderColor: '#031819'
-  #         tertiaryColor: '#154245'
-  #         activationBkgColor: '#FA465B'
-  #         quadrant1Fill: '#255759'
-  #         quadrant2Fill: '#154245'
-  #         quadrant3Fill: '#092C2E'
-  #         quadrant4Fill: '#154245'
-  #         quadrantInternalBorderStrokeFill: '#031819'
-  #         quadrantExternalBorderStrokeFill: '#031819'
   - copy:
       extension: .md
       source: ./
