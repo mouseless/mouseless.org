@@ -50,7 +50,11 @@ const count = computed(() => items.length);
       width: 100% !important;
     }
 
-    &__item:has(img.prose:only-child) {
+    &__item:has(img.prose:only-child){
+      display: none;
+    }
+
+    &__item:has(.mermaid) {
       display: none;
     }
   }
