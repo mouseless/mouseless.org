@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -40,7 +42,7 @@ export default defineNuxtConfig({
       "~/components"
     ]
   },
-  css: ["~/assets/styles.scss"],
+  css: ["~/assets/styles.scss", "~/assets/tailwind.css"],
   devtools: {
     enabled: false
   },
@@ -67,6 +69,9 @@ export default defineNuxtConfig({
     }
   },
   vite: {
+    plugins: [
+      tailwindcss()
+    ],
     css: {
       preprocessorOptions: {
         scss: {
