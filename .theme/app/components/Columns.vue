@@ -1,13 +1,13 @@
 <template>
   <div
-    class="columns s s--mv_sm"
+    class="flex items-start m0 p0 mt-(--space-sm) mb-(--space-sm) gap-(--space-md) max-md:flex-col max-md:gap-(--space-md)"
   >
     <div
       v-for="i in Array(count)
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="columns__item"
+      class="w-full max-md:has-[.mermaid]:hidden max-md:has-[img.prose]:hidden"
       :style="`width: ${itemWidths[i] || itemWidth}`"
     >
       <slot :name="items[i]" />
@@ -30,33 +30,3 @@ const slots = useSlots();
 const items = Object.keys(slots);
 const count = computed(() => items.length);
 </script>
-<style lang="scss">
-.columns {
-  display: flex;
-  gap: var(--space-md);
-  align-items: flex-start;
-
-  &__item {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: $page-m) {
-  .columns {
-    flex-direction: column;
-    gap: var(--space-md);
-
-    &__item {
-      width: 100% !important;
-    }
-
-    &__item:has(img.prose:only-child) {
-      display: none;
-    }
-
-    &__item:has(.mermaid) {
-      display: none;
-    }
-  }
-}
-</style>
