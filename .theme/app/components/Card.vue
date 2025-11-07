@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
+  <div class="w-full flex flex-col gap-(--space-md) md:gap-(--space-sm)">
     <Image
       v-if="image !== null"
       :src="image"
-      class="card__image"
+      class="max-w-[10em] lg:max-w-[7em] md:max-w-[5em]"
     />
-    <div class="card__slot">
+    <div class="max-w-[80ch]">
       <slot />
     </div>
   </div>
@@ -18,30 +18,3 @@ defineProps({
   }
 });
 </script>
-<style lang="scss">
-.card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-
-  &__image {
-    max-width: 10em;
-  }
-}
-
-@media (max-width: $page-m) {
-  .card {
-    gap: var(--space-sm);
-
-    &__image { max-width: 7em; }
-    &__slot { max-width: 80ch; }
-  }
-}
-
-@media (max-width: $page-s) {
-  .card {
-    &__image { max-width: 5em; }
-  }
-}
-</style>
