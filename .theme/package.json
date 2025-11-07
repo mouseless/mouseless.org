@@ -26,6 +26,8 @@
     "sass": "1.92.1"
   },
   "dependencies": {
-    "mermaid": "11.12.1"
+    "mermaid": "11.12.1",
+    "@tailwindcss/vite": "4.1.17",
+    "tailwindcss": "4.1.17"
   }
 }
