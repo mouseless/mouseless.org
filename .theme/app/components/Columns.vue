@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-start m0 p0 mt-(--space-sm) mb-(--space-sm) gap-(--space-md) max-md:flex-col max-md:gap-(--space-md)"
+    class="flex items-start my-(--space-sm) gap-(--space-md) max-md:flex-col"
   >
     <div
       v-for="i in Array(count)
