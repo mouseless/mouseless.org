@@ -32,6 +32,7 @@ onMounted(async() => {
   color: transparent;
 }
 .mermaid {
+  width: fit-content;
   padding: var(--space-sm);
   border-radius: var(--border-radius);
   background-color: var(--color-darkgreen-800);

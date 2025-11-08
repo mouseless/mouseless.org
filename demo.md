@@ -154,7 +154,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Diagrams
 
-:::columns{:itemWidths='["30%", "65%"]'}
+:::columns
 
 #diagram-1
 

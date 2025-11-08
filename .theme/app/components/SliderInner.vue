@@ -190,6 +190,7 @@ function changeSlide(page) {
     height: 25px;
     object-fit: cover;
     padding-inline: var(--space-md) 0;
+    max-width: none;
 
     &--reverse {
       transform: scaleX(-1);

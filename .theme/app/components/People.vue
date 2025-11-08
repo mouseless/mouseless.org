@@ -1,7 +1,11 @@
 <template>
   <div
     class="my-4 w-full"
-    :class="`text-${align}`"
+    :class="{
+      'text-left': align === 'left',
+      'text-center': align === 'center',
+      'text-right': align === 'right'
+    }"
   >
     <div class="inline-flex flex-row flex-wrap gap-(--space-xs)">
       <div v-for="member in members" :key="member.login">
