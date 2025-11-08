@@ -77,7 +77,6 @@ export default defineNuxtConfig({
         scss: {
           additionalData: `
             @use "@/assets/_variables.scss" as *;
-            @use "@/assets/_mixins.scss" as *;
           `
         }
       }

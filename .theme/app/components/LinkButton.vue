@@ -1,10 +1,13 @@
 <template>
   <NuxtLink
-    class="link-button s s--pv_xs s--ph_sm"
-    :class="[
-      `link-button--type_${type}`,
-      `link-button--color_${color}`
-    ]"
+    class="inline-flex no-underline rounded-(--space-xs) py-(--space-xs) px-(--space-sm)"
+    :class="{
+      'bg-(--color-dark-link) text-(--color-gray-100) hover:bg-(--color-dark-link-hover) hover:text-(--color-gray-100)': type === 'default' && color === 'dark',
+      'bg-(--color-light-link) text-(--color-gray-900) hover:bg-(--color-light-link-hover) hover:text-(--color-gray-900)': type === 'default' && color === 'light',
+      'text-[x-large]': type === 'cta',
+      'bg-(--color-red-700) text-(--color-gray-100) hover:bg-(--color-red-800) hover:text-(--color-gray-100)': type === 'cta' && color === 'dark',
+      'bg-(--color-green-500) text-(--color-darkgreen-900) hover:bg-(--color-green-800) hover:text-(--color-gray-100)': type === 'cta' && color === 'light'
+    }"
     :to="to"
   >
     {{ text }}
@@ -28,51 +31,3 @@ defineProps({
 
 const color = inject("block-child-color", "dark");
 </script>
-<style lang="scss">
-.link-button {
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: var(--space-xs);
-
-  &--type_default {
-    background: var(--color-dark-link);
-    color: var(--color-gray-100);
-
-    &:hover {
-      background-color: var(--color-dark-link-hover);
-      color: var(--color-gray-100);
-    }
-  }
-
-  &--type_default.link-button--color_light {
-    background: var(--color-light-link);
-    color: var(--color-gray-900);
-
-    &:hover {
-      background: var(--color-light-link-hover);
-      color: var(--color-gray-900);
-    }
-  }
-
-  &--type_cta {
-    font-size: x-large;
-    background-color: var(--color-red-700);
-    color: var(--color-gray-100);
-
-    &:hover {
-      background-color: var(--color-red-800);
-      color: var(--color-gray-100);
-    }
-  }
-
-  &--type_cta.link-button--color_light {
-    background-color: var(--color-green-500);
-    color: var(--color-darkgreen-900);
-
-    &:hover {
-      background-color: var(--color-green-800);
-      color: var(--color-gray-100);
-    }
-  }
-}
-</style>
