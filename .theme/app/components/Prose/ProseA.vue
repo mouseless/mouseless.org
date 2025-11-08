@@ -21,7 +21,7 @@
 <script setup>
 defineProps({
   href: { type: String, default: "" },
-  target: { type: String }
+  target: { type: String, default: undefined }
 });
 
 const color = inject("block-child-color", "dark");
