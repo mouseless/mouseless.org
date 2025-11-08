@@ -1,58 +1,33 @@
 <template>
   <NuxtLink
-    class="anchor"
     :href="href"
     :target="target"
-    :class="`anchor--color_${color}`"
+    class="underline"
+    :class="{
+      'text-(--color-dark-link) hover:text-(--color-dark-link-hover)': color === 'dark',
+      'text-(--color-light-link) hover:text-(--color-light-link-hover)': color === 'light'
+    }"
   >
     <slot />
     <i
       v-if="href.startsWith('http')"
-      class="anchor__icon fa-solid fa-arrow-up-right-from-square"
+      class="
+        fa-solid fa-arrow-up-right-from-square
+        ml-(--space-xs)
+      "
     />
   </NuxtLink>
 </template>
 <script setup>
 defineProps({
-  href: {
-    type: String,
-    default: ""
-  },
-  target: {
-    type: String,
-    default: undefined,
-    required: false
-  }
+  href: { type: String, default: "" },
+  target: { type: String }
 });
 
 const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss" scoped>
-.anchor {
-  &--color {
-    &_dark {
-      color: var(--color-dark-link);
-
-      &:hover {
-        color: var(--color-dark-link-hover);
-      }
-    }
-
-    &_light {
-      color: var(--color-light-link);
-
-      &:hover {
-        color: var(--color-light-link-hover);
-      }
-    }
-  }
-
-  &__icon {
-    margin-left: var(--space-xs);
-  }
-
-  & > img + &__icon {
-    display: none;
-  }
+img + i {
+  display: none;
 }
 </style>

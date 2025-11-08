@@ -69,6 +69,10 @@ details {
   }
 }
 
+a > img {
+  display: inline-block;
+}
+
 @media (min-width: calc($page-l + 1px)) {
   .d--h_l { display: none !important; }
 }
