@@ -1,11 +1,11 @@
 <template>
-  <div class="pr-list">
+  <div class="pr-list mt-[3em] flex flex-col gap-[1em]">
     <div class="pr-list__repos">
-      <div class="repo-list">
-        <ul class="repo-list__items">
-          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+      <div class="repo-list flex flex-row items-end p-0">
+        <ul class="repo-list__items m-0 p-0 flex flex-row flex-wrap gap-2 !max-w-[90%]">
+          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item :marker:content-none">
             <button
-              class="repo-list__item-link"
+                class="repo-list__item-link cursor-pointer w-full text-left whitespace-nowrap border-0 hover:bg-(--color-gray-400)! active:bg-(--color-darkgreen-700)!"
               :class="[
                 `repo-list__item-link--color_${color}`,
                 {'repo-list__item-link--active': index == repoIndex},
@@ -19,9 +19,9 @@
         <Switcher :action="switcher" :status="prState" class="repo-list__switcher" />
       </div>
     </div>
-    <div class="pr-list__prs">
-      <div v-if="!render" class="pr-list__loading loading">
-        <div class="loading__icon" />
+    <div class="pr-list__prs m-auto w-full">
+      <div v-if="!render" :class="`h-[${height}]`" class="flex items-center" >
+        <div class="border-4 border-solid border-(--color-bg-soft) border-l-(--color-fg) rounded-full h-12 w-12 mx-[auto] my-0 animate-spin" />
       </div>
       <SliderInner
         v-if="render"
@@ -35,7 +35,7 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else class="pr-list__see-more pr">
+          <div v-else  :class="`h-[${height}]`" class="rounded-(--border-radius) p-(--border-radius) pr">
             <div class="pr__body">
               To see more pull requests, please visit
               <NuxtLink
@@ -96,80 +96,32 @@ async function getPullRequests(state) {
 }
 </script>
 <style lang="scss">
-.pr-list {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-
-  &__prs {
-    margin: auto;
-    width: 100%;
-  }
-
-  &__see-more {
-    color: var(--color-gray-100);
-    background-color: var(--color-darkgreen-800);
-    border-radius: var(--border-radius);
-    padding: var(--border-radius);
-    height: v-bind(height);
-  }
-}
-
-.loading {
-  display: flex;
-  align-items: center;
-  height: v-bind(height);
-
-  &__icon {
-    animation: spin 1s linear infinite;
-    border: 4px solid var(--color-bg-soft);
-    border-left-color: var(--color-fg);
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-}
-
 .repo-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: flex-end;
+  // padding: 0;
 
   &__items {
-    margin: 0;
-    padding: 0;
-    max-width: 90%;
+    // margin: 0;
+    // padding: 0;
+    // max-width: 90%;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // gap: 1em;
   }
 
   &__item {
-    &::marker {
-      content: none;
-    }
+    // &::marker {
+    //   content: none;
+    // }
   }
 
   &__item-link {
-    background-color: var(--color-darkgreen-700);
-    border: 0px;
-    cursor: pointer;
     border-radius: var(--space-xs);
-    width: 100%;
     padding: var(--space-xs) var(--space-sm);
-    text-align: left;
-    white-space: nowrap;
     font-family: var(--font-default);
     font-size: medium;
 
@@ -183,10 +135,6 @@ async function getPullRequests(state) {
         background-color: var(--color-bg-mute);
         color: var(--color-fg);
       }
-    }
-
-    &:hover {
-      background-color: var(--color-gray-400);
     }
 
     &--active, &--active:hover {
