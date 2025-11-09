@@ -1,75 +1,31 @@
 <template>
   <div
-    class="switcher"
-    :class="`switcher--status_${status}`"
+    class="
+      flex items-center rounded-(--border-radius) cursor-pointer
+      text-(--color-fg-mute) font-[weight:bold] text-[smaller]
+      relative h-[25px] w-[65px]
+    "
+    :class="{
+      'bg-(--color-green-800) text-(--color-gray-100) justify-start': status === 'open',
+      'bg-(--color-gray-300) justify-end': status === 'all'
+    }"
     @click="action"
   >
-    <button class="switcher__btn" />
-    <div class="switcher__text">
+    <button
+      class="absolute w-[21px] h-[21px] bg-(--color-gray-100) rounded-[50%] cursor-pointer top-2"
+      :class="{
+        'right-[2px]': status === 'open',
+        'left-[2px]': status === 'all'
+      }"
+    />
+    <div class="ml-[7px] mr-[8px]">
       {{ status === "all" ? "All" : "Open" }}
     </div>
   </div>
 </template>
 <script setup>
 defineProps({
-  action: {
-    type: Function,
-    default: null
-  },
-  status: {
-    type: String,
-    default: null
-  }
+  action: { type: Function, default: null },
+  status: { type: String, default: null }
 });
 </script>
-<style lang="scss" scoped>
-.switcher {
-  display: flex;
-  align-items: center;
-  border-radius: var(--border-radius);
-  color: var(--color-fg-mute);
-  cursor: pointer;
-  font-weight: bold;
-  font-size: smaller;
-  height: 25px;
-  position: relative;
-  width: 65px;
-
-  &--status {
-    &_open {
-      background-color: var(--color-green-800);
-      color: var(--color-gray-100);
-      justify-content: start;
-
-      .switcher__btn {
-        right: 2px;
-      }
-    }
-
-    &_all {
-      background-color: var(--color-gray-300);
-      justify-content: end;
-
-      .switcher__btn {
-        left: 2px;
-      }
-    }
-  }
-
-  &__text {
-    margin-left: 7px;
-    margin-right: 8px;
-  }
-
-  &__btn {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    background-color: var(--color-gray-100);
-    border-radius: 50%;
-    border: 0;
-    cursor: pointer;
-    top: 2px;
-  }
-}
-</style>
