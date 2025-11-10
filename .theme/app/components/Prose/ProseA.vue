@@ -13,7 +13,7 @@
       v-if="href.startsWith('http')"
       class="
         fa-solid fa-arrow-up-right-from-square
-        ml-xs
+        ml-xs [img+i]:hidden
       "
     />
   </NuxtLink>
@@ -26,8 +26,3 @@ defineProps({
 
 const color = inject("block-child-color", "dark");
 </script>
-<style scoped>
-img + i {
-  @apply hidden;
-}
-</style>

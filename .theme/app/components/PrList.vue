@@ -1,25 +1,31 @@
 <template>
-  <div class="pr-list mt-md flex flex-col gap-sm">
-    <div class="pr-list__repos">
-      <div class="repo-list flex flex-row items-end p-0">
-        <ul class="repo-list__items m-0 p-0 flex flex-row flex-wrap gap-2 max-w-[90%]">
-          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item :marker:content-none">
+  <div class="mt-md flex flex-col gap-sm">
+    <div>
+      <div class="flex flex-row items-end p-0 max-sm:flex-col max-sm:items-start max-sm:gap-sm">
+        <ul class="m-0 p-0 flex flex-row flex-wrap gap-2 max-w-[90%]">
+          <li v-for="(repo, index) in repos" :key="repo" class=":marker:content-none">
             <button
-                class="repo-list__item-link cursor-pointer w-full text-left whitespace-nowrap border-0 hover:bg-gray-400 active:bg-darkgreen-700"
-              :class="[
-                `repo-list__item-link--color_${color}`,
-                {'repo-list__item-link--active': index == repoIndex},
-              ]"
+              class="
+                cursor-pointer text-[length:medium]
+                whitespace-nowrap leading-[normal]
+                rounded-xs px-sm py-xs
+                hover:bg-gray-400
+              "
+              :class="{
+                'bg-gray-300 text-darkgreen-900': color === 'dark',
+                'bg-bg-mute text-fg': color === 'light',
+                'bg-darkgreen-700! text-gray-100': index == repoIndex
+              }"
               @click="changeSlider(index)"
             >
               {{ repo }}
             </button>
           </li>
         </ul>
-        <Switcher :action="switcher" :status="prState" class="repo-list__switcher" />
+        <Switcher :action="switcher" :status="prState" class="ml-auto mr-0 max-sm:ml-0 max-sm:mr-auto" />
       </div>
     </div>
-    <div class="pr-list__prs m-auto w-full">
+    <div class="m-auto w-full">
       <div v-if="!render" :style="`height: ${height};`" class="flex items-center" >
         <div class="border-4 border-solid border-bg-soft border-l-fg rounded-full h-12 w-12 mx-[auto] my-0 animate-spin" />
       </div>
@@ -35,12 +41,13 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else :style="`height: ${height};`" class="bg-darkgreen-800 rounded p-sm pr">
-            <div class="pr__body">
+          <div v-else :style="`height: ${height};`" class="bg-darkgreen-800 rounded p-md">
+            <div>
               To see more pull requests, please visit
               <NuxtLink
                 :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
                 :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
+                class="text-light-text-heading hover:text-green-500"
               />
             </div>
           </div>
@@ -89,48 +96,3 @@ async function getPullRequests(state) {
   return result;
 }
 </script>
-<style lang="scss">
-.repo-list {
-  &__item-link {
-    border-radius: var(--space-xs);
-    padding: var(--space-xs) var(--space-sm);
-    font-family: var(--font-default);
-    font-size: medium;
-
-    &--color{
-      &_dark {
-        background-color: var(--color-gray-300);
-        color: var(--color-darkgreen-900);
-      }
-
-      &_light {
-        background-color: var(--color-bg-mute);
-        color: var(--color-fg);
-      }
-    }
-
-    &--active, &--active:hover {
-      background-color: var(--color-darkgreen-700);
-      color: var(--color-gray-100);
-    }
-  }
-
-  &__switcher {
-    margin-left: auto;
-    margin-right: 0
-  }
-}
-
-@media (max-width: $page-s) {
-  .repo-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-sm);
-
-    &__switcher {
-      margin-left: 0;
-      margin-right: auto;
-    }
-  }
-}
-</style>

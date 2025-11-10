@@ -39,7 +39,7 @@ function getState(object) {
   background-color: var(--color-darkgreen-800);
   border-radius: var(--space-sm);
   color: var(--color-bg);
-  padding: var(--space-sm);
+  padding: var(--space-md);
   overflow: hidden;
   display: grid;
   grid-template-rows: min-content auto min-content;
@@ -129,5 +129,4 @@ function getState(object) {
     }
   }
 }
-
 </style>
