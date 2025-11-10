@@ -1,2 +1,16 @@
+@import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/preflight" layer(base);
 @import "tailwindcss/utilities";
+
+
+@theme {
+    --color-*: initial;
+
+    /* --color-red-100: var(--color-red-100); this is an example */
+}
+
+@layer components {
+  .content {
+    /* @apply max-md:max-w-[90%]; this is an example */
+  }
+}
