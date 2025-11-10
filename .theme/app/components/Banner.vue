@@ -1,28 +1,19 @@
 <template>
-  <div
-    class="banner f f--xl"
-  >
+  <div class="c--banner w-full text-xl">
     <slot />
   </div>
 </template>
-<style lang="scss">
-.block:has(.banner) {
-  padding: var(--space-xl) 0;
+<style>
+@reference "../assets/tailwind.css";
 
-  &.color {
-    &--dark {
-      strong { color: var(--color-dark-text-highlight); }
-    }
-
-    &--light {
-      strong { color: var(--color-light-text-highlight); }
-    }
-  }
+.c--banner {
+  h1, h2, h3, h4, h5, h6 { @apply leading-[1.2em]; }
 }
 
-.banner {
-  width: 100%;
+.c--block:has(.c--banner) {
+  @apply py-xl px-0;
 
-  h1,h2,h3,h4,h5,h6 { line-height: 1.2em; }
+  &.dark strong { @apply text-dark-text-highlight; }
+  &.light strong { @apply text-light-text-highlight; }
 }
 </style>
