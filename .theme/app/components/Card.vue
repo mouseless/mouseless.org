@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full flex flex-col gap-(--space-md) md:gap-(--space-sm)">
+  <div class="w-full flex flex-col gap-md md:gap-sm">
     <Image
       v-if="image !== null"
       :src="image"
-      class="max-w-[10em] lg:max-w-[7em] md:max-w-[5em]"
+      class="max-w-[10em] max-lg:max-w-[7em] max-md:max-w-[5em]"
     />
-    <div class="max-w-[80ch]">
+    <div class="max-w-(--width-content)">
       <slot />
     </div>
   </div>

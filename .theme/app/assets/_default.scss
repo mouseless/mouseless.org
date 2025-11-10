@@ -25,6 +25,7 @@
 
   --font-size: 16px;
   --height-logo: 30px;
+  --page-min: 400px;
 }
 
 body {
@@ -117,9 +118,11 @@ a > img {
 
   .d--v_s { display: none !important; }
 
-  .f--xl { font-size: 1.125em; }
-  .f--lg { font-size: 1.0675m; }
-  .f--md { font-size: 1em; }
-  .f--sm { font-size: 0.875em; }
-  .f--xs { font-size: 0.75em; }
+  :root {
+    --font-xl: 1.125em;
+    --font-lg: 1.0675m;
+    --font-md: 1em;
+    --font-sm: 0.875em;
+    --font-xs: 0.75em;
+  }
 }
