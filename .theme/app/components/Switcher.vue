@@ -1,24 +1,24 @@
 <template>
   <div
     class="
-      flex items-center rounded-(--border-radius) cursor-pointer
-      text-(--color-fg-mute) font-[weight:bold] text-[smaller]
-      relative h-[25px] w-[65px]
+      flex items-center rounded cursor-pointer
+      text-fg-mute font-[weight:bold] text-[smaller]
+      relative h-6 w-17
     "
     :class="{
-      'bg-(--color-green-800) text-(--color-gray-100) justify-start': status === 'open',
-      'bg-(--color-gray-300) justify-end': status === 'all'
+      'bg-green-800 text-gray-100 justify-start': status === 'open',
+      'bg-gray-500 justify-end': status === 'all'
     }"
     @click="action"
   >
     <button
-      class="absolute w-[21px] h-[21px] bg-(--color-gray-100) rounded-[50%] cursor-pointer top-2"
+      class="absolute w-5 h-5 bg-gray-100 rounded cursor-pointer"
       :class="{
-        'right-[2px]': status === 'open',
-        'left-[2px]': status === 'all'
+        'right-0.5': status === 'open',
+        'left-0.5': status === 'all'
       }"
     />
-    <div class="ml-[7px] mr-[8px]">
+    <div class="mx-3">
       {{ status === "all" ? "All" : "Open" }}
     </div>
   </div>
