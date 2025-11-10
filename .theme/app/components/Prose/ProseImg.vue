@@ -3,7 +3,7 @@
     :src="src"
     :width="width"
     :height="height"
-    class="prose max-w-full rounded-(--border-radius)"
+    class="prose max-w-full rounded"
   />
 </template>
 <script setup>

@@ -1,8 +1,8 @@
 <template>
   <hr
     :class="{
-      'border-t-(--color-dark-text-mute)': color === 'dark',
-      'border-t-(--color-light-text-mute)': color === 'light'
+      'border-t-dark-text-mute': color === 'dark',
+      'border-t-light-text-mute': color === 'light'
     }"
   >
 </template>

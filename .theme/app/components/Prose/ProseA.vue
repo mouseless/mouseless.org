@@ -4,8 +4,8 @@
     :target="target"
     class="underline"
     :class="{
-      'text-(--color-dark-link) hover:text-(--color-dark-link-hover)': color === 'dark',
-      'text-(--color-light-link) hover:text-(--color-light-link-hover)': color === 'light'
+      'text-dark-link hover:text-dark-link-hover': color === 'dark',
+      'text-light-link hover:text-light-link-hover': color === 'light'
     }"
   >
     <slot />
@@ -13,7 +13,7 @@
       v-if="href.startsWith('http')"
       class="
         fa-solid fa-arrow-up-right-from-square
-        ml-(--space-xs)
+        ml-xs
       "
     />
   </NuxtLink>
