@@ -26,8 +26,8 @@ defineProps({
 
 const color = inject("block-child-color", "dark");
 </script>
-<style lang="scss" scoped>
+<style scoped>
 img + i {
-  display: none;
+  @apply hidden;
 }
 </style>

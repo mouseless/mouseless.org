@@ -23,14 +23,8 @@
 </template>
 <script setup>
 defineProps({
-  pr: {
-    type: Object,
-    default: null
-  },
-  height: {
-    type: String,
-    default: null
-  }
+  pr: { type: Object, default: null },
+  height: { type: String, default: null }
 });
 function getState(object) {
   if(object.state === "closed") {
@@ -43,9 +37,9 @@ function getState(object) {
 <style lang="scss" scoped>
 .pr {
   background-color: var(--color-darkgreen-800);
-  border-radius: var(--space-md);
+  border-radius: var(--space-sm);
   color: var(--color-bg);
-  padding: var(--space-md);
+  padding: var(--space-sm);
   overflow: hidden;
   display: grid;
   grid-template-rows: min-content auto min-content;

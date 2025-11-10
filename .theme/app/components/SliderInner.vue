@@ -36,7 +36,7 @@
     <div class="slider__thumb">
       <button
         class="button d d--h_s"
-        :class="{ 'button--disabled': pageNumber == 0}"
+        :class="{ 'button--disabled': pageNumber == 0 }"
         @click="left"
       >
         <img
@@ -124,7 +124,7 @@ function changeSlide(page) {
     }
 
     &--color {
-      &_dark { color: var(--color-dark-text-normal); }
+      &_dark { color: var(--color-light-text-normal); }
       &_light { color: var(--color-light-text-normal); }
     }
 

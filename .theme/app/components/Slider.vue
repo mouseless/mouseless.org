@@ -7,14 +7,8 @@
 </template>
 <script setup>
 defineProps({
-  align: {
-    type: String,
-    default: "left"
-  },
-  height: {
-    type: String,
-    default: "50ch"
-  }
+  align: { type: String, default: "left" },
+  height: { type: String, default: "50ch" }
 });
 
 const slots = useSlots();
