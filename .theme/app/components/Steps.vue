@@ -67,8 +67,6 @@ const stepCount = steps.length;
 const currentIndex = ref(0);
 const color = inject("block-child-color", "dark");
 
-console.log(color);
-
 function changeContent(index) {
   currentIndex.value = index;
 }
