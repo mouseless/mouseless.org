@@ -43,15 +43,6 @@ a > img {
   @apply inline-block;
 }
 
-/* content */
-.c--content {
-  @apply
-    w-full mx-auto max-w-[1280px]
-    max-lg:max-w-[1024px]
-    max-md:max-w-[800px]
-    max-sm:max-w-[90%];
-}
-
 /* banner */
 .c--banner {
   h1, h2, h3, h4, h5, h6 { @apply leading-[1.2em]; }
@@ -77,6 +68,34 @@ a > img {
   &.light strong { @apply text-light-text-highlight; }
 }
 
+/* bullet-list */
+.c--bullet-list {
+  li {
+    @apply max-w-[600px];
+
+    &::marker {
+      @apply content-['\__'] text-red-500 text-xl font-semibold;
+    }
+  }
+}
+
+/* content */
+.c--content {
+  @apply
+    w-full mx-auto max-w-[1280px]
+    max-lg:max-w-[1024px]
+    max-md:max-w-[800px]
+    max-sm:max-w-[90%];
+}
+
+/* mermaid */
+.c--mermaid {
+  svg {
+    @apply w-full mx-auto;
+  }
+}
+
+/* pr-body */
 .c--pr-body {
   a, h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading!; }
   h1 { @apply text-[2.5em]; }
@@ -87,6 +106,7 @@ a > img {
   h6 { @apply text-[1.125em]; }
   a { @apply hover:text-green-500; }
   a, code { @apply break-words whitespace-break-spaces; }
+  code { @apply px-1 py-0.5 bg-darkgreen-600 rounded-xs; }
   pre { @apply bg-darkgreen-700 rounded-sm p-sm leading-sm; }
-  ul { @apply list-disc;}
+  ul { @apply list-disc m-0;}
 }

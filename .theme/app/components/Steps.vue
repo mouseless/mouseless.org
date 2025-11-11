@@ -19,7 +19,7 @@
           @click="changeContent(index - 1)"
         >
           <div
-            class="rounded-xs px-md text-center w-full"
+            class="rounded-xs text-center w-full"
             :class="{
               'text-bg! bg-red-700': currentIndex == index - 1,
               'text-bg': color === 'dark',
@@ -47,7 +47,7 @@
         >
       </div>
     </div>
-    <div class="mt-md overflow-auto max-md:mt-0 max-md:w-full max-md:h-fit" :style="`height: ${height}`">
+    <div class="mt-md overflow-auto max-md:mt-0 max-md:w-full max-md:h-fit" :style="{ height }">
       <div class="max-w-(--width-content)">
         <slot :name="steps[currentIndex]" />
       </div>

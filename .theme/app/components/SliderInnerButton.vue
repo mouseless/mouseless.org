@@ -8,7 +8,7 @@
     <img
       class="mouseless logo mark mono h-[25px]!"
       :class="{
-        'invert': color === 'light',
+        'invert!': color === 'light',
         'transform-[scaleX(-1)]': reverse
       }"
     >

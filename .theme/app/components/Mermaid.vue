@@ -2,7 +2,7 @@
   <div
     ref="mermaidContainer"
     class="
-      w-full p-sm rounded bg-darkgreen-800 text-center
+      c--mermaid p-sm rounded bg-darkgreen-800 text-center
       not-[data-processed]:text-transparent
     "
   >

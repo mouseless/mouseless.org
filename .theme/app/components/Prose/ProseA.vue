@@ -2,7 +2,7 @@
   <NuxtLink
     :href="href"
     :target="target"
-    class="underline"
+    class="underline inline-block has-[img]:my-0.5"
     :class="{
       'text-dark-link hover:text-dark-link-hover': color === 'dark',
       'text-light-link hover:text-light-link-hover': color === 'light'

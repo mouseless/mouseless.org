@@ -10,27 +10,18 @@ We're more than happy to meet and discover ways to collaborate.
 
 :::columns
 
-#form
-
-:contact-form
-
 #mail
 
-:br
+Send an e-mail to [connect@mouseless.org](mailto:connect@mouseless.org).
 
-Don't like filling out forms in websites?
+Or join our matrix space via
+[#collective:mouseless.org](https://matrix.to/#/#collective:mouseless.org)
 
-Send an e-mail to [connect@mouseless.codes](mailto:connect@mouseless.codes).
-
-Or join our matrix space via [#collective:mouseless.org](https://matrix.to/#/#collective:mouseless.org)
-
-:br
-:hr
-:br
-
-We’re a remote and independent collective, yet we sometimes gather here.
+#maps
 
 :maps
+
+We’re a remote and independent collective, yet we sometimes gather here.
 
 :::
 

@@ -3,7 +3,11 @@
     class="flex flex-row max-lg:flex-col gap-md max-md:gap-sm"
     :class="imageAlign === 'left' ? 'flex-row-reverse' : ''"
   >
-    <Image v-if="image !== null" class="max-lg:w-18 max-lg:h-18 w-26 h-26" :src="image" />
+    <Image
+      v-if="image !== null"
+      class="w-26 h-26 max-lg:w-18 max-lg:h-18"
+      :src="image"
+    />
     <div class="flex flex-col gap-sm">
       <h5 v-if="title !== null">
         {{ title }}
@@ -21,4 +25,3 @@ defineProps({
   image: { type: String, default: null }
 });
 </script>
-

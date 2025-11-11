@@ -1,6 +1,9 @@
 <template>
-  <div class="bg-darkgreen-800 rounded-md text-bg p-md overflow-hidden flex flex-col" :style="{ height }">
-    <h3 class="mb-xs !text-bg inline-flex items-start flex-col whitespace-nowrap max-w-[calc(var(--page-min) / 2)]">
+  <div
+    class="bg-darkgreen-800 rounded text-bg p-md overflow-hidden flex flex-col"
+    :style="{ height }"
+  >
+    <h3 class="mb-xs text-bg! inline-flex items-start flex-col whitespace-nowrap">
       {{ pr?.title }}
       <div
         class="flex items-center gap-2 capitalize h-8 px-4 text-fg rounded text-[40%]"
@@ -21,9 +24,14 @@
     <div class="flex-2 overflow-hidden c--pr-body">
       <MarkdownFormat :body="pr?.body" tag="article" />
     </div>
-    <NuxtLink :to="pr?.html_url" class="block text-bg no-underline text-center -mb-md leading-md hover:text-light-link-hover">
-      See in GitHub
-    </NuxtLink>
+    <div class="block text-bg no-underline text-center -mb-md py-xs leading-md hover:text-light-link-hover">
+      <NuxtLink
+        :to="pr?.html_url"
+        class="px-sm py-xs bg-green-900 rounded-xs hover:bg-green-600 text-bg hover:text-fg"
+      >
+        See in <i class="fa-brands fa-github ml-1" /> GitHub
+      </NuxtLink>
+    </div>
   </div>
 </template>
 <script setup>

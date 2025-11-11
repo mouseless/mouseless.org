@@ -39,11 +39,12 @@
           class="
             mx-sm my-xs pb-sm
             max-sm:ml-sm max-sm:py-xs
-            max-sm:text-light-link max-sm:hover:text-light-link-hover
+            max-sm:text-light-link max-sm:hover:text-light-link-hover!
+            max-sm:hover:border-b-0
           "
           :class="{
-            'text-dark-link border-b border-dark-link': menu.path === root,
-            'max-sm:border-b-0 max-sm:border-l-(length:--space-xs) max-sm:border-l-light-link-hover': menu.path === root,
+            'text-dark-link hover:text-dark-link border-b border-dark-link': menu.path === root,
+            'max-sm:border-b-0! max-sm:border-l-(length:--space-xs) max-sm:border-l-light-link-hover': menu.path === root,
             'max-sm:-ml-xs! max-sm:pl-sm': menu.path === root,
             'hover:text-dark-link-hover! hover:border-b border-dark-link-hover': menu.path !== root
           }"

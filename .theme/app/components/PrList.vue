@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="m-auto w-full">
-      <div v-if="!render" :style="`height: ${height};`" class="flex items-center" >
+      <div v-if="!render" :style="{ height }" class="flex items-center" >
         <div class="border-4 border-solid border-bg-soft border-l-fg rounded-full h-12 w-12 mx-[auto] my-0 animate-spin" />
       </div>
       <SliderInner
@@ -41,15 +41,13 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else :style="`height: ${height};`" class="bg-darkgreen-800 rounded p-md">
-            <div>
-              To see more pull requests, please visit
-              <NuxtLink
-                :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
-                :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
-                class="text-light-text-heading hover:text-green-500"
-              />
-            </div>
+          <div v-else :style="{ height }" class="bg-darkgreen-800 rounded p-md text-bg">
+            <span>To see more pull requests, please visit </span>
+            <NuxtLink
+              :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
+              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
+              class="text-light-text-heading hover:text-green-500 underline"
+            />
           </div>
         </template>
       </SliderInner>
@@ -58,7 +56,7 @@
 </template>
 <script setup>
 const props = defineProps({
-  height: { type: String, default: "50ch" },
+  height: { type: String, default: "60ch" },
   repos: { type: Array, default: () => [] }
 });
 

@@ -8,7 +8,7 @@
         @click="left"
       />
       <div
-        class="flex-1"
+        class="flex-1 max-w-full"
         :class="{
           'text-center': align === 'center',
           'text-start [&>p]:ml-0': align === 'left'

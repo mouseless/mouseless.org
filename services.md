@@ -26,7 +26,7 @@ software and modernize legacy systems.
 
 ::block{color=black}
 
-:::columns{:itemWidths='["100%", "130ch"]'}
+:::columns{:itemWidths='["100%", "100ch"]'}
 
 #text
 

@@ -5,8 +5,8 @@
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="w-full max-md:has-[.mermaid]:hidden max-md:has-[img.prose]:hidden"
-      :style="`width: ${itemWidths[i] || itemWidth}`"
+      class="max-md:w-full!"
+      :style="{ width: itemWidths[i] || itemWidth }"
     >
       <slot :name="items[i]" />
     </div>

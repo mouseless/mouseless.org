@@ -8,9 +8,8 @@
     ]"
   >
     <ul
-      class="m-0 [&>li]:max-w-[600px] text-start leading-8 list-inside [&>li::marker]:content-['-'] [&>li::marker]:text-red-500 [&>li::marker]:text-xl [&>li::marker]:font-semibold"
+      class="c--bullet-list m-0 text-start leading-8 list-inside ps-0"
       :class="[
-        `${color === 'light' ? '[&>li::before]:invert [&>li::before]:filter' : ''}`,
         `${align === 'right' ? 'pe-px-0' : ''}`,
         `${align === 'left' ? 'ps-px-0' : ''}`
       ]">
@@ -22,5 +21,4 @@
 defineProps({
   align: { type: String, default: "left" }
 });
-const color = inject("block-child-color", "dark");
 </script>
