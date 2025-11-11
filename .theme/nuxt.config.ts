@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       "~/components"
     ]
   },
-  css: ["~/assets/styles.scss", "~/assets/tailwind.css"],
+  css: ["~/assets/theme.css", "~/assets/components.css"],
   devtools: {
     enabled: false
   },
@@ -71,16 +71,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       tailwindcss()
-    ],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-            @use "@/assets/_variables.scss" as *;
-          `
-        }
-      }
-    }
+    ]
   },
   compatibilityDate: "2024-08-15"
 });

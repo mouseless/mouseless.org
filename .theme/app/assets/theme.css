@@ -2,14 +2,63 @@
 @import "tailwindcss/preflight" layer(base);
 @import "tailwindcss/utilities";
 
+:root {
+  --color-dark-link: var(--color-darkgreen-900);
+  --color-dark-link-hover: var(--color-red-700);
+  --color-dark-box-bg: var(--color-darkgreen-800);
+  --color-dark-text-heading: var(--color-black);
+  --color-dark-text-normal: var(--color-darkgreen-900);
+  --color-dark-text-highlight: var(--color-red-700);
+  --color-dark-text-mute: var(--color-gray-300);
+
+  --color-light-link: var(--color-gray-100);
+  --color-light-link-hover: var(--color-green-500);
+  --color-light-box-bg: var(--color-darkgreen-800);
+  --color-light-text-heading: var(--color-white);
+  --color-light-text-normal: var(--color-gray-400);
+  --color-light-text-highlight: var(--color-green-500);
+  --color-light-text-mute: var(--color-darkgreen-800);
+
+  --color-mermaid-primary: var(--color-red-500);
+  --color-mermaid-secondary: var(--color-darkgreen-900);
+  --color-mermaid-tertiary: var(--color-darkgreen-700);
+  --color-mermaid-line: var(--color-gray-300);
+  --color-mermaid-fill1: var(--color-darkgreen-600);
+
+  --font-size: 16px;
+  --height-logo: 30px;
+
+  --page-l: 1600px;
+  --page-m: 1280px;
+  --page-s: 905px;
+  --page-min: 400px;
+}
+
+@media (max-width: 1599px) {
+  :root {
+    --font-size: 14px;
+    --height-logo: 20px;
+  }
+}
+
+@media (max-width: 904px) {
+  :root {
+    --font-xl: 1.125em;
+    --font-lg: 1.0675m;
+    --font-md: 1em;
+    --font-sm: 0.875em;
+    --font-xs: 0.75em;
+  }
+}
+
 @theme {
   /* ----------- */
   /* breakpoints */
   /* ----------- */
   --breakpoint-*: initial;
-  --breakpoint-lg: 1600px;
-  --breakpoint-md: 1280px;
-  --breakpoint-sm: 905px;
+  --breakpoint-lg: 1600px; /* var(--page-l); /* doesn't work */
+  --breakpoint-md: 1280px; /* var(--page-m); /* doesn't work */
+  --breakpoint-sm: 905px; /* var(--page-s); /* doesn't work */
 
   /* ----- */
   /* color */
@@ -229,10 +278,4 @@
   --shadow-md: var(--space-md);
   --shadow-lg: var(--space-lg);
   --shadow-xl: var(--space-xl);
-}
-
-@layer components {
-  .content {
-    /* @apply max-md:max-w-[90%]; this is an example */
-  }
 }

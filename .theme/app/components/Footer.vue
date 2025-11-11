@@ -71,7 +71,7 @@ const content = await queryCollection("footer").first();
   }
 }
 
-@media (max-width: $page-m) {
+@media (max-width: 1279px /* max-md */) {
   .footer {
     &__menu {
       flex-direction: column;
@@ -88,7 +88,7 @@ const content = await queryCollection("footer").first();
   }
 }
 
-@media (max-width: $page-s) {
+@media (max-width: 904px /* max-sm */) {
   .footer {
     &__content {
       flex-direction: column;

@@ -198,7 +198,7 @@ function changeSlide(page) {
   }
 }
 
-@media (max-width: $page-s) {
+@media (max-width: 904px /* max-sm */) {
   .slider {
     margin-left: 0;
     margin-right: 0;

@@ -72,7 +72,7 @@ function getState(object) {
   display: inline-flex;
   align-items: flex-start;
   flex-direction: column;
-  max-width: calc($page-min / 2);
+  max-width: calc(var(--page-min) / 2);
   white-space: nowrap;
 
   &__state {

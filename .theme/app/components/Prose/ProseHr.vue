@@ -1,5 +1,6 @@
 <template>
   <hr
+    class="my-xs"
     :class="{
       'border-t-dark-text-mute': color === 'dark',
       'border-t-light-text-mute': color === 'light'

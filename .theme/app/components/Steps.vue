@@ -156,7 +156,7 @@ function changeContent(index) {
   }
 }
 
-@media (max-width: $page-m) {
+@media (max-width: 1279px /* max-md */) {
   .steps {
     display: flex;
     flex-direction: row-reverse;

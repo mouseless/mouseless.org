@@ -1,0 +1,78 @@
+@reference "./theme.css";
+
+body {
+  @apply m-0 p-0 min-w-(--page-min);
+}
+
+article p {
+  @apply max-w-full;
+}
+
+h1 { @apply text-[4em]; }
+h2 { @apply text-[3em]; }
+h3 { @apply text-[2.5em]; }
+h4 { @apply text-[2em]; }
+h5 { @apply text-[1.7em]; }
+h6 { @apply text-[1.5em]; }
+
+code {
+  @apply rounded bg-transparent;
+}
+
+details {
+  @apply mt-sm;
+
+  summary {
+    @apply cursor-pointer list-outside;
+
+    > *:not(.link-button):first-child {
+      @apply inline;
+    }
+
+    a {
+      @apply no-underline!;
+    }
+  }
+
+  &[open] {
+    @apply mb-md;
+  }
+}
+
+a > img {
+  @apply inline-block;
+}
+
+/* content */
+.c--content {
+  @apply
+    w-full mx-auto max-w-[1280px]
+    max-lg:max-w-[1024px]
+    max-md:max-w-[800px]
+    max-sm:max-w-[90%];
+}
+
+/* banner */
+.c--banner {
+  h1, h2, h3, h4, h5, h6 { @apply leading-[1.2em]; }
+}
+
+/* block */
+.c--block {
+  h1, h2, h3, h4, h5, h6 { @apply m-0; }
+}
+
+.c--block.dark {
+  h1, h2, h3, h4, h5, h6 { @apply text-dark-text-heading; }
+}
+
+.c--block.light {
+  h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading; }
+}
+
+.c--block:has(.c--banner) {
+  @apply py-xl px-0;
+
+  &.dark strong { @apply text-dark-text-highlight; }
+  &.light strong { @apply text-light-text-highlight; }
+}

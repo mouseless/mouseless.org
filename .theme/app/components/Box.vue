@@ -71,7 +71,7 @@ defineProps({
   }
 }
 
-@media (max-width: $page-m) {
+@media (max-width: 1279px /*max-md*/) {
   .box {
     gap: var(--space-sm);
 

@@ -34,7 +34,7 @@
         @click="backgroundChange(item)"
       />
     </div>
-    <div class="content">
+    <div class="c--content">
       <Include v-if="content !== null" :content="content" />
       <slot v-else />
     </div>
@@ -62,12 +62,3 @@ function backgroundChange(color) {
   currentColor.value = color;
 }
 </script>
-<style>
-@reference "../assets/tailwind.css";
-
-h1, h2, h3, h4, h5, h6 {
-  .c--block & { @apply m-0; }
-  .c--block.dark & { @apply text-dark-text-heading; }
-  .c--block.light & { @apply text-light-text-heading; }
-}
-</style>
