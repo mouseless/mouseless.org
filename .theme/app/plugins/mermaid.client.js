@@ -10,14 +10,15 @@ const mermaidOptions = {
   }
 };
 
-const getCSSVariable = variable => {
-  if(typeof document !== "undefined") {
-    return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
-  }
-  return "";
-};
+function getCSSVariable(variable) {
+  if(typeof document === "undefined") { return ""; }
+
+  return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+}
 
 const themeVariables = {
+  fontFamily: getCSSVariable("--font-default"),
+  fontSize: getCSSVariable("--font-size"),
   primaryColor: getCSSVariable("--color-mermaid-primary"),
   primaryTextColor: getCSSVariable("--color-light-link"),
   primaryBorderColor: getCSSVariable("--color-mermaid-primary"),

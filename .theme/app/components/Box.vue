@@ -9,9 +9,9 @@
       :src="image"
     />
     <div class="flex flex-col gap-sm">
-      <h5 v-if="title !== null">
+      <h4 v-if="title !== null">
         {{ title }}
-      </h5>
+      </h4>
       <div class="[&>p:first-child]:mt-0">
         <slot />
       </div>

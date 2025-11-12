@@ -13,7 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-### We offer;
+## We offer;
 # Software Development
 # as a Service
 

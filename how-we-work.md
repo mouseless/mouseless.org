@@ -13,7 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-### Experiment and learn, while
+## Experiment and learn, while
 # Delivering at pace
 
 We are a __self-managing__ team with a single point of contact assigned per

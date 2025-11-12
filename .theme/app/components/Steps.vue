@@ -47,7 +47,7 @@
         >
       </div>
     </div>
-    <div class="mt-md overflow-auto max-md:mt-0 max-md:w-full max-md:h-fit" :style="{ height }">
+    <div class="mt-md overflow-auto max-md:mt-0 max-md:w-full max-md:h-fit!" :style="{ height }">
       <div class="max-w-(--width-content)">
         <slot :name="steps[currentIndex]" />
       </div>
