@@ -3,9 +3,10 @@
     Active
     <div
       class="
-        flex items-center rounded cursor-pointer
+        flex items-center
+        relative rounded w-12 h-6
         text-fg-mute font-[weight:bold] text-[smaller]
-        relative h-6 w-12
+        cursor-pointer
       "
       :class="{
         'bg-green-800 text-gray-100 justify-start': status === 'open',
@@ -14,7 +15,7 @@
       @click="action"
     >
       <button
-        class="absolute w-5 h-5 bg-gray-100 rounded cursor-pointer transition-all"
+        class="absolute rounded w-5 h-5 bg-gray-100 transition-all cursor-pointer"
         :class="{
           'left-6.5': status === 'open',
           'left-0.5': status === 'all'

@@ -1,15 +1,19 @@
 <template>
-  <div class="mt-md flex flex-col gap-sm">
+  <div class="flex flex-col gap-sm mt-md">
     <div>
-      <div class="flex flex-row items-end p-0 max-sm:flex-col max-sm:items-start max-sm:gap-sm">
-        <ul class="m-0 p-0 flex flex-row flex-wrap gap-2 max-w-[90%]">
+      <div
+         class="
+           flex flex-row items-end p-0
+           max-sm:flex-col max-sm:items-start max-sm:gap-sm
+         "
+       >
+        <ul class="flex flex-row flex-wrap gap-2 max-w-[90%] m-0 p-0">
           <li v-for="(repo, index) in repos" :key="repo" class=":marker:content-none">
             <button
               class="
-                cursor-pointer text-[length:medium]
-                whitespace-nowrap leading-[normal]
-                rounded-xs px-sm py-xs
-                hover:bg-gray-400
+                rounded-xs cursor-pointer px-sm py-xs
+                text-[length:medium] whitespace-nowrap
+                leading-[normal] hover:bg-gray-400
               "
               :class="{
                 'bg-gray-300 text-darkgreen-900': color === 'dark',
@@ -41,7 +45,7 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else :style="{ height }" class="bg-darkgreen-800 rounded p-md text-bg">
+          <div v-else :style="{ height }" class="rounded bg-darkgreen-800 p-md text-bg">
             <span>To see more pull requests, please visit </span>
             <NuxtLink
               :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"

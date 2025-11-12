@@ -1,5 +1,10 @@
 <template>
-  <div class="flex flex-col -mx-[50px] max-sm:mx-0">
+  <div
+    class="
+      flex flex-col -mx-[50px]
+      max-sm:mx-0
+    "
+  >
     <div class="flex gap-[25px]">
       <SliderInnerButton
         class="max-sm:hidden"
@@ -33,7 +38,7 @@
       <button
         v-for="n in slides.length"
         :key="n"
-        class="rounded-[50%] cursor-pointer w-[10px] h-[10px] m-xs p-0"
+        class="rounded-[50%] w-[10px] h-[10px] m-xs p-0 cursor-pointer"
         :class="{
           'bg-gray-500': color === 'dark',
           'bg-darkgreen-700': color === 'light',

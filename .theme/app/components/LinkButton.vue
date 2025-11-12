@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="inline-flex no-underline rounded-xs py-xs px-sm"
+    class="inline-flex rounded-xs py-xs px-sm no-underline"
     :class="{
       'bg-dark-link text-gray-100 hover:bg-dark-link-hover hover:text-gray-100': type === 'default' && color === 'dark',
       'bg-light-link text-gray-900 hover:bg-light-link-hover hover:text-gray-900': type === 'default' && color === 'light',

@@ -2,8 +2,8 @@
   <div
     ref="mermaidContainer"
     class="
-      c--mermaid p-sm rounded bg-darkgreen-800 text-center
-      not-[data-processed]:text-transparent
+      c--mermaid rounded bg-darkgreen-800 p-sm
+      text-center not-[data-processed]:text-transparent
     "
   >
     <slot />

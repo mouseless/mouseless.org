@@ -1,12 +1,12 @@
 <template>
   <div
-    class="bg-darkgreen-800 rounded text-bg p-md overflow-hidden flex flex-col"
+    class="flex flex-col rounded bg-darkgreen-800 p-md text-bg overflow-hidden"
     :style="{ height }"
   >
-    <h3 class="mb-xs text-bg! inline-flex items-start flex-col whitespace-nowrap">
+    <h3 class="inline-flex flex-col mb-xs items-start text-bg! whitespace-nowrap">
       {{ pr?.title }}
       <div
-        class="flex items-center gap-2 capitalize h-8 px-4 text-fg rounded text-[50%]"
+        class="flex items-center gap-2 rounded capitalize h-8 px-4 text-fg text-[50%]"
         :class="[
           getState(pr) === 'draft' ? 'bg-gray-500' :
           getState(pr) === 'open' ? 'bg-green-500' :
@@ -27,7 +27,7 @@
     <div class="block text-bg no-underline text-center -mb-md py-xs leading-md hover:text-light-link-hover">
       <NuxtLink
         :to="pr?.html_url"
-        class="px-sm py-xs bg-green-900 rounded-xs hover:bg-green-600 text-bg hover:text-fg"
+        class="rounded-xs px-sm py-xs bg-green-900 hover:bg-green-600 text-bg hover:text-fg"
       >
         See in <i class="fa-brands fa-github ml-1" /> GitHub
       </NuxtLink>

@@ -1,5 +1,10 @@
 <template>
-  <header class="header flex justify-between py-md max-sm:py-sm">
+  <header
+    class="
+      header flex justify-between py-md
+      max-sm:py-sm
+    "
+  >
     <NuxtLink class="content-center leading-[0]" to="/">
       <img class="mouseless logo max-md:hidden">
       <img class="mouseless logo short hidden max-md:block">

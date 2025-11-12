@@ -1,11 +1,18 @@
 <template>
   <div
-    class="flex flex-row max-lg:flex-col gap-md max-md:gap-sm"
+    class="
+      flex flex-row gap-md
+      max-lg:flex-col
+      max-md:gap-sm
+    "
     :class="imageAlign === 'left' ? 'flex-row-reverse' : ''"
   >
     <Image
       v-if="image !== null"
-      class="w-26 h-26 max-lg:w-18 max-lg:h-18"
+      class="
+        w-26 h-26
+        max-lg:w-18 max-lg:h-18
+      "
       :src="image"
     />
     <div class="flex flex-col gap-sm">

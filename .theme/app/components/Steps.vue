@@ -1,16 +1,29 @@
 <template>
-  <div class="rounded max-md:flex max-md:flex-row-reverse max-md:gap-md">
-    <div class="flex justify-start max-md:flex-col max-md:gap-xs">
+  <div
+    class="
+      rounded
+      max-md:flex max-md:flex-row-reverse max-md:gap-md
+    "
+  >
+    <div
+      class="
+        flex justify-start
+        max-md:flex-col max-md:gap-xs
+      "
+    >
       <div
          v-for="index in stepCount"
          :key="index"
-         class="flex max-md:flex-col max-md:items-center"
+         class="
+           flex
+           max-md:flex-col max-md:items-center
+         "
       >
         <div
           class="
-            flex flex-col justify-center items-center cursor-pointer
-            rounded p-sm w-32 gap-xs
-            max-md:rounded-xs max-md:p-xs max-md:w-28 max-md:gap-0
+            flex flex-col justify-center items-center gap-xs
+            rounded w-32 p-sm cursor-pointer
+            max-md:gap-0 max-md:rounded-xs max-md:p-xs max-md:w-28
           "
           :class="{
             'text-gray-100 bg-darkgreen-900 hover:bg-darkgreen-800': color === 'dark',
@@ -19,7 +32,7 @@
           @click="changeContent(index - 1)"
         >
           <div
-            class="rounded-xs text-center w-full"
+            class="rounded-xs w-full text-center"
             :class="{
               'text-bg! bg-red-700': currentIndex == index - 1,
               'text-bg': color === 'dark',
@@ -29,7 +42,7 @@
             {{ index }}
           </div>
           <div
-            class="flex items-center text-center font-heading text-[large] font-bold h-full">
+            class="flex items-center h-full text-center font-heading text-[large] font-bold">
             {{ titles[index - 1] }}
           </div>
         </div>
@@ -47,7 +60,13 @@
         >
       </div>
     </div>
-    <div class="mt-md overflow-auto max-md:mt-0 max-md:w-full max-md:h-fit!" :style="{ height }">
+    <div
+      class="
+        mt-md overflow-auto
+        max-md:mt-0 max-md:w-full max-md:h-fit!
+      "
+      :style="{ height }"
+    >
       <div class="max-w-(--width-content)">
         <slot :name="steps[currentIndex]" />
       </div>

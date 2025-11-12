@@ -3,7 +3,7 @@
     :src="src"
     :width="width"
     :height="height"
-    class="prose max-w-full rounded"
+    class="max-w-full rounded"
   />
 </template>
 <script setup>
