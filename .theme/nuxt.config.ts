@@ -1,6 +1,17 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          type: "text/css",
+          href: `${import.meta.env.BASE_URL ?? ""}/layers.css`
+        }
+      ]
+    }
+  },
   content: {
     renderer: {
       anchorLinks: {
