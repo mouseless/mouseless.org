@@ -51,5 +51,5 @@ import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
 const menus = store.pageMeta;
-const content = await queryCollection("footer").first();
+const content = await queryCollection("content").path("/footer").first();
 </script>
