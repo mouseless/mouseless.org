@@ -1,116 +1,118 @@
 @reference "./theme.css";
 
-body {
-  @apply m-0 p-0 min-w-(--page-min);
-}
+@layer utilities {
+  body {
+    @apply m-0 p-0 min-w-(--page-min);
+  }
 
-article p {
-  @apply max-w-full;
-}
+  article p {
+    @apply max-w-full;
+  }
 
-h1 { @apply text-h1; }
-h2 { @apply text-h2; }
-h3 { @apply text-h3; }
-h4 { @apply text-h4; }
-h5 { @apply text-h5; }
-h6 { @apply text-h6; }
+  h1 { @apply text-h1; }
+  h2 { @apply text-h2; }
+  h3 { @apply text-h3; }
+  h4 { @apply text-h4; }
+  h5 { @apply text-h5; }
+  h6 { @apply text-h6; }
 
-code {
-  @apply rounded bg-transparent;
-}
+  code {
+    @apply rounded bg-transparent;
+  }
 
-details {
-  @apply mt-sm;
+  details {
+    @apply mt-sm;
 
-  summary {
-    @apply cursor-pointer list-outside;
+    summary {
+      @apply cursor-pointer list-outside;
 
-    > *:not(.link-button):first-child {
-      @apply inline;
+      > *:not(.link-button):first-child {
+        @apply inline;
+      }
+
+      a {
+        @apply no-underline!;
+      }
     }
 
-    a {
-      @apply no-underline!;
+    &[open] {
+      @apply mb-md;
+    }
+  }
+
+  a > img {
+    @apply inline-block;
+  }
+
+  /* banner */
+  .c--banner {
+    h1, h2, h3, h4, h5, h6 { @apply leading-[1.2em]; }
+  }
+
+  /* block */
+  .c--block {
+    h1, h2, h3, h4, h5, h6 { @apply m-0; }
+  }
+
+  .c--block.dark {
+    h1, h2, h3, h4, h5, h6 { @apply text-dark-text-heading; }
+  }
+
+  .c--block.light {
+    h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading; }
+  }
+
+  .c--block:has(.c--banner) {
+    @apply py-xl px-0;
+
+    &.dark strong { @apply text-dark-text-highlight; }
+    &.light strong { @apply text-light-text-highlight; }
+  }
+
+  /* bullet-list */
+  .c--bullet-list {
+    li {
+      @apply max-w-[600px];
+
+      &::marker {
+        @apply content-['\__'] text-red-500 text-xl font-semibold;
+      }
+
+      & + li {
+        @apply mt-xs;
+      }
     }
   }
 
-  &[open] {
-    @apply mb-md;
+  /* content */
+  .c--content {
+    @apply
+      w-full mx-auto max-w-[1280px]
+      max-lg:max-w-[1024px]
+      max-md:max-w-[800px]
+      max-sm:max-w-[90%];
   }
-}
 
-a > img {
-  @apply inline-block;
-}
-
-/* banner */
-.c--banner {
-  h1, h2, h3, h4, h5, h6 { @apply leading-[1.2em]; }
-}
-
-/* block */
-.c--block {
-  h1, h2, h3, h4, h5, h6 { @apply m-0; }
-}
-
-.c--block.dark {
-  h1, h2, h3, h4, h5, h6 { @apply text-dark-text-heading; }
-}
-
-.c--block.light {
-  h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading; }
-}
-
-.c--block:has(.c--banner) {
-  @apply py-xl px-0;
-
-  &.dark strong { @apply text-dark-text-highlight; }
-  &.light strong { @apply text-light-text-highlight; }
-}
-
-/* bullet-list */
-.c--bullet-list {
-  li {
-    @apply max-w-[600px];
-
-    &::marker {
-      @apply content-['\__'] text-red-500 text-xl font-semibold;
-    }
-
-    & + li {
-      @apply mt-xs;
+  /* mermaid */
+  .c--mermaid {
+    svg {
+      @apply w-full mx-auto;
     }
   }
-}
 
-/* content */
-.c--content {
-  @apply
-    w-full mx-auto max-w-[1280px]
-    max-lg:max-w-[1024px]
-    max-md:max-w-[800px]
-    max-sm:max-w-[90%];
-}
-
-/* mermaid */
-.c--mermaid {
-  svg {
-    @apply w-full mx-auto;
+  /* pr-body */
+  .c--pr-body {
+    a, h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading!; }
+    h1 { @apply text-[2.5em]; }
+    h2 { @apply text-[2em]; }
+    h3 { @apply text-[1.7em]; }
+    h4 { @apply text-[1.5em]; }
+    h5 { @apply text-[1.25em]; }
+    h6 { @apply text-[1.125em]; }
+    a { @apply hover:text-green-500; }
+    a, code { @apply break-words whitespace-break-spaces; }
+    code { @apply px-1 py-0.5 bg-darkgreen-600 rounded-xs; }
+    pre { @apply bg-darkgreen-700 rounded-sm p-sm leading-sm; }
+    ul { @apply list-disc m-0;}
   }
-}
-
-/* pr-body */
-.c--pr-body {
-  a, h1, h2, h3, h4, h5, h6 { @apply text-light-text-heading!; }
-  h1 { @apply text-[2.5em]; }
-  h2 { @apply text-[2em]; }
-  h3 { @apply text-[1.7em]; }
-  h4 { @apply text-[1.5em]; }
-  h5 { @apply text-[1.25em]; }
-  h6 { @apply text-[1.125em]; }
-  a { @apply hover:text-green-500; }
-  a, code { @apply break-words whitespace-break-spaces; }
-  code { @apply px-1 py-0.5 bg-darkgreen-600 rounded-xs; }
-  pre { @apply bg-darkgreen-700 rounded-sm p-sm leading-sm; }
-  ul { @apply list-disc m-0;}
 }

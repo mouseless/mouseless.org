@@ -1,6 +1,10 @@
-@import "tailwindcss/theme" layer(theme);
+@layer base, brand, theme, utilities;
+
+@import "https://brand.mouseless.codes/assets/css/secondary.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" layer(theme);
 @import "tailwindcss/preflight" layer(base);
-@import "tailwindcss/utilities";
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
 
 :root {
   --color-dark-link: var(--color-darkgreen-900);
