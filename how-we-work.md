@@ -110,8 +110,7 @@ we manage tech upgrades.
 
 #### Apply Upgrades
 
-Using our headless opinionated .NET framework we manage to easily upgrade
-customer projects.
+Using our opinionated framework we manage to easily upgrade customer projects.
 
 :link-button{to="https://baked.mouseless.codes/release-notes/v0-13#net-upgrade" text="See in Baked"}
 
@@ -267,7 +266,7 @@ exchange, enhancing innovation across the community.
 
 #### Baked
 
-Check out Baked, our opinionated framework for .NET;
+Check out Baked, our opinionated framework for .NET and Vue;
 
 :link-button{to="https://baked.mouseless.codes" text="See Baked"}
 

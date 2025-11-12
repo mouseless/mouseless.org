@@ -13,7 +13,7 @@
           'text-center': align === 'center',
           'text-start [&>p]:ml-0': align === 'left'
         }"
-        :style="`min-height: ${height};`"
+        :style="{ minHeight: height }"
       >
         <slot :page-number="pageNumber" :slides="upToDateSlides" />
       </div>
