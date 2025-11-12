@@ -84,6 +84,13 @@
     }
   }
 
+  /* column */
+  .c--column {
+    & > p > img {
+      @apply max-md:max-h-64 mx-auto;
+    }
+  }
+
   /* content */
   .c--content {
     @apply
@@ -96,7 +103,7 @@
   /* mermaid */
   .c--mermaid {
     svg {
-      @apply w-full mx-auto;
+      @apply w-full mx-auto max-md:max-h-64;
     }
   }
 

@@ -10,7 +10,7 @@
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="max-md:w-full!"
+      class="c--column max-md:w-full!"
       :style="{ width: itemWidths[i] || itemWidth }"
     >
       <slot :name="items[i]" />
