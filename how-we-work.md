@@ -57,7 +57,7 @@ flowchart TB
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -122,7 +122,7 @@ Using our opinionated framework we manage to easily upgrade customer projects.
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -177,7 +177,7 @@ See how we build software incrementally;
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -232,7 +232,7 @@ See how we care work descriptions and tasks;
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 

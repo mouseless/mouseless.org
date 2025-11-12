@@ -15,11 +15,12 @@ for our clients.
 
 #text
 
-:include{content="/contents/tech-stacks/yk.md"}
-
 #### Yurtiçi Kargo
 
-We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
+We’re rebuilding and maintaining [Yurtiçi Kargo][]’s legacy internal dashboard
+with modern tools for a faster, cleaner, and more reliable experience.
+
+:include{content="/contents/tech-stacks/yk.md"}
 
 :br
 
@@ -37,12 +38,12 @@ We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
 #text
 
-:include{content="/contents/tech-stacks/inventiv.md"}
-
 #### Inventiv - Multinet Up
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][].
+
+:include{content="/contents/tech-stacks/inventiv.md"}
 
 :br
 
@@ -60,12 +61,12 @@ an open source service framework [Routine][].
 
 #text
 
-:include{content="contents/tech-stacks/forward.md"}
-
 #### Forward
 
 We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
+
+:include{content="contents/tech-stacks/forward.md"}
 
 :br
 

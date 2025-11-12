@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col gap-md md:gap-sm">
+  <div class="w-full flex flex-col gap-md">
     <Image
       v-if="image !== null"
       :src="image"

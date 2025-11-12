@@ -3,7 +3,6 @@
     class="
       flex flex-row gap-md
       max-lg:flex-col
-      max-md:gap-sm
     "
     :class="imageAlign === 'right' ? 'flex-row-reverse' : ''"
   >

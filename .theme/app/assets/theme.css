@@ -30,9 +30,9 @@
   --height-logo: 30px;
 
   --page-l: 1600px;
-  --page-m: 1280px;
+  --page-m: 1150px;
   --page-s: 905px;
-  --page-min: 350px;
+  --page-min: 300px;
 
   --font-size: 18px;
   --font-h1: 3em;
@@ -73,7 +73,7 @@
   /* ----------- */
   --breakpoint-*: initial;
   --breakpoint-lg: 1600px; /* var(--page-l); /* doesn't work */
-  --breakpoint-md: 1280px; /* var(--page-m); /* doesn't work */
+  --breakpoint-md: 1150px; /* var(--page-m); /* doesn't work */
   --breakpoint-sm: 905px; /* var(--page-s); /* doesn't work */
 
   /* ----- */

@@ -24,7 +24,7 @@
     @apply mt-sm;
 
     summary {
-      @apply cursor-pointer list-outside;
+      @apply cursor-pointer list-outside max-sm:list-inside;
 
       > *:not(.link-button):first-child {
         @apply inline;
@@ -87,7 +87,13 @@
   /* column */
   .c--column {
     & > p > img {
-      @apply max-md:max-h-64 mx-auto;
+      @apply max-md:max-h-60 max-md:mx-auto;
+    }
+  }
+
+  .c--column.c--column--image-icon {
+    & > p > img {
+      @apply max-md:max-h-30 max-md:ml-0 max-sm:max-h-20;
     }
   }
 
