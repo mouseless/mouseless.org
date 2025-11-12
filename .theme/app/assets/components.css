@@ -76,6 +76,10 @@ a > img {
     &::marker {
       @apply content-['\__'] text-red-500 text-xl font-semibold;
     }
+
+    & + li {
+      @apply mt-xs;
+    }
   }
 }
 

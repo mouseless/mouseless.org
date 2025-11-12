@@ -6,7 +6,7 @@
     <h3 class="mb-xs text-bg! inline-flex items-start flex-col whitespace-nowrap">
       {{ pr?.title }}
       <div
-        class="flex items-center gap-2 capitalize h-8 px-4 text-fg rounded text-[40%]"
+        class="flex items-center gap-2 capitalize h-8 px-4 text-fg rounded text-[50%]"
         :class="[
           getState(pr) === 'draft' ? 'bg-gray-500' :
           getState(pr) === 'open' ? 'bg-green-500' :

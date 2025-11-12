@@ -41,6 +41,8 @@ We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
 ::::
 
+:br
+
 ::::details
 
 :::::summary
@@ -95,6 +97,8 @@ an open source service framework [Routine][] for the customer.
 - __Project Management__: GitHub, Azure DevOps, Microsoft Teams
 
 ::::
+
+:br
 
 ::::details
 
@@ -158,6 +162,8 @@ their customers integrate with CRM and more.
 - __Project Management__: GitHub, Slack
 
 ::::
+
+:br
 
 ::::details
 

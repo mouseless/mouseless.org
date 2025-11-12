@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
-    :href="href"
-    :target="target"
+    :href
+    :target="target ?? external ? 'blank' : undefined"
     class="underline inline-block has-[img]:my-0.5"
     :class="{
       'text-dark-link hover:text-dark-link-hover': color === 'dark',
@@ -10,19 +10,20 @@
   >
     <slot />
     <i
-      v-if="href.startsWith('http')"
+      v-if="external"
       class="
         fa-solid fa-arrow-up-right-from-square
-        ml-xs [img+i]:hidden
+        ml-1 [img+i]:hidden
       "
     />
   </NuxtLink>
 </template>
 <script setup>
-defineProps({
+const { href } = defineProps({
   href: { type: String, default: "" },
   target: { type: String, default: undefined }
 });
 
 const color = inject("block-child-color", "dark");
+const external = href.startsWith("http");
 </script>
