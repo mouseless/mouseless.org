@@ -1,107 +1,33 @@
 <template>
   <div
-    class="box"
-    :class="image !== null ? `box--image-align_${imageAlign}` : ''"
+    class="
+      flex flex-row gap-md
+      max-lg:flex-col
+    "
+    :class="imageAlign === 'right' ? 'flex-row-reverse' : ''"
   >
-    <h5 v-if="title !== null" class="box__title">
-      {{ title }}
-    </h5>
-    <div class="box__detail">
-      <slot />
+    <Image
+      v-if="image !== null"
+      class="
+        w-26 h-26
+        max-lg:w-18 max-lg:h-18
+      "
+      :src="image"
+    />
+    <div class="flex flex-col gap-sm">
+      <h4 v-if="title !== null">
+        {{ title }}
+      </h4>
+      <div class="[&>p:first-child]:mt-0">
+        <slot />
+      </div>
     </div>
-    <Image v-if="image !== null" class="box__img" :src="image" />
   </div>
 </template>
 <script setup>
 defineProps({
-  imageAlign: {
-    type: String,
-    default: "right"
-  },
-  title: {
-    type: String,
-    default: null
-  },
-  image: {
-    type: String,
-    default: null
-  }
+  imageAlign: { type: String, default: "right" },
+  title: { type: String, default: null },
+  image: { type: String, default: null }
 });
 </script>
-<style lang="scss">
-:root {
-  --column-gap: var(--space-md);
-}
-
-.box {
-  display: grid;
-  grid-template-areas:
-    "title"
-    "detail";
-  width: 100%;
-  column-gap: var(--column-gap);
-
-  &__title {
-    grid-area: title;
-  }
-
-  &__detail {
-    grid-area: detail;
-  }
-
-  &__img {
-    grid-area: image;
-    width: 100%;
-  }
-
-  &--image-align {
-    &_left {
-      grid-template-areas:
-        "image title"
-        "image detail";
-      grid-template-columns: calc(25% - var(--column-gap)) 75%;
-    }
-
-    &_right {
-      grid-template-areas:
-        "title image"
-        "detail image";
-      grid-template-columns: 75% calc(25% - var(--column-gap));
-    }
-  }
-}
-
-@media (max-width: $page-m) {
-  .box {
-    gap: var(--space-sm);
-
-    &__detail {
-      p:first-child {
-        margin-top: 0;
-      }
-    }
-
-    &__img {
-      max-width: 5em;
-    }
-
-    &--image-align {
-      &_left {
-        grid-template-areas:
-          "image"
-          "title"
-          "detail";
-        grid-template-columns: 100%;
-      }
-
-      &_right {
-        grid-template-areas:
-          "image"
-          "title"
-          "detail";
-        grid-template-columns: 100%;
-      }
-    }
-  }
-}
-</style>

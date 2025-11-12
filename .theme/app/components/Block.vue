@@ -1,21 +1,40 @@
 <template>
   <div
-    class="block s s--pv_lg color"
-    :class="[
-      `color--${currentColor}`,
-      `color--${colors[currentColor]}`
-    ]"
+    class="c--block text-left py-lg"
+    :class="{
+      'bg-darkgreen-900': currentColor === 'black',
+      'bg-gray-100': currentColor === 'white',
+      'bg-blue-900': currentColor === 'blue',
+      'bg-green-900': currentColor === 'green',
+      'text-dark-text-normal': colors[currentColor] === 'dark',
+      'text-light-text-normal': colors[currentColor] === 'light',
+      [colors[currentColor]]: true
+    }"
   >
-    <div v-if="debug" class="block__colors">
+    <div
+      v-if="debug"
+      class="
+        sticky left-md top-md w-md h-0 -mt-md
+        max-sm:gap-sm max-sm:left-xs max-sm:top-md max-sm:w-xs max-sm:-mt-md
+      "
+    >
       <button
         v-for="(_, item) in colors"
         :key="item"
-        class="block__color-btn color"
-        :class="`color--${item}`"
+        class="
+          color cursor-pointer rounded-xs border-0 h-sm mb-xs w-md
+          max-sm:h-sm max-sm:w-sm max-sm:mb-sm
+        "
+        :class="{
+          'bg-darkgreen-900': item === 'black',
+          'bg-gray-100': item === 'white',
+          'bg-blue-900': item === 'blue',
+          'bg-green-900': item === 'green'
+        }"
         @click="backgroundChange(item)"
       />
     </div>
-    <div class="content">
+    <div class="c--content">
       <Include v-if="content !== null" :content="content" />
       <slot v-else />
     </div>
@@ -23,18 +42,9 @@
 </template>
 <script setup>
 const props = defineProps({
-  color: {
-    type: String,
-    default: "white"
-  },
-  content: {
-    type: String,
-    default: null
-  },
-  debug: {
-    type: Boolean,
-    default: false
-  }
+  color: { type: String, default: "white" },
+  content: { type: String, default: null },
+  debug: { type: Boolean, default: false }
 });
 
 const colors = {
@@ -52,70 +62,3 @@ function backgroundChange(color) {
   currentColor.value = color;
 }
 </script>
-<style lang="scss">
-.block {
-  text-align: left;
-
-  p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h1, h2, h3, h4, h5, h6 { margin: 0; }
-
-  &__colors {
-    position: sticky;
-    left: var(--space-md);
-    top: var(--space-md);
-    width: var(--space-md);
-    height: 0;
-    margin-top: calc(var(--space-md) * -1);
-  }
-
-  &__color-btn {
-    cursor: pointer;
-    border-radius: var(--space-xs);
-    border-width: 0px;
-    height: var(--space-sm);
-    margin-bottom: var(--space-xs);
-    width: var(--space-md);
-  }
-}
-
-.color {
-  &--black { background-color: var(--color-darkgreen-900); }
-  &--white { background-color: var(--color-gray-100); }
-  &--blue { background-color: var(--color-blue-900); }
-  &--green { background-color: var(--color-green-900); }
-
-  &--dark {
-    color: var(--color-dark-text-normal);
-
-    h1, h2, h3, h4, h5, h6 { color: var(--color-dark-text-heading); }
-  }
-
-  &--light {
-    color: var(--color-light-text-normal);
-
-    h1, h2, h3, h4, h5, h6 { color: var(--color-light-text-heading); }
-  }
-}
-
-@media (max-width: $page-s) {
-  .block {
-    &__colors {
-      gap: var(--space-sm);
-      left: var(--space-xs);
-      top: var(--space-md);
-      width: var(--space-xs);
-      margin-top: calc(var(--space-md) * -1);
-    }
-
-    &__color-btn {
-      height: var(--space-sm);
-      width: var(--space-sm);
-      margin-bottom: var(--space-sm);
-    }
-  }
-}
-</style>

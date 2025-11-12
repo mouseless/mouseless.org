@@ -1,5 +1,11 @@
 <template>
-  <div ref="mermaidContainer" class="mermaid">
+  <div
+    ref="mermaidContainer"
+    class="
+      c--mermaid rounded bg-darkgreen-800 p-sm
+      text-center not-[data-processed]:text-transparent
+    "
+  >
     <slot />
   </div>
 </template>
@@ -27,14 +33,3 @@ onMounted(async() => {
   }
 });
 </script>
-<style scoped>
-.mermaid:not([data-processed]) {
-  color: transparent;
-}
-.mermaid {
-  padding: var(--space-sm);
-  border-radius: var(--border-radius);
-  background-color: var(--color-darkgreen-800);
-  text-align: center;
-}
-</style>

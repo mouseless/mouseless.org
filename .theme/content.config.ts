@@ -28,10 +28,6 @@ export default defineContentConfig({
         "menu-title": z.string(),
         position: z.number()
       })
-    }),
-    footer: defineCollection({
-      type: "page",
-      source: "**/footer.md"
     })
   }
 });

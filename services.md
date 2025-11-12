@@ -13,7 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-### We offer;
+## We offer;
 # Software Development
 # as a Service
 
@@ -26,7 +26,7 @@ software and modernize legacy systems.
 
 ::block{color=black}
 
-:::columns{:itemWidths='["100%", "130ch"]'}
+:::columns{:itemWidths='["100%", "100ch"]'}
 
 #text
 
@@ -69,16 +69,21 @@ quadrantChart
 
 :::banner
 
-## Custom Software Development
-
-We provide an agile, self-managing software development team to align with your
-business demands.
-
 :::
 
-:::columns{:itemWidths='["85%", "15%"]'}
+:br
 
-#text
+:::columns
+
+#csd
+
+# Custom Software Development
+:br
+
+::::box{title="We provide an agile, self-managing software development team to align with your business demands." image-align="left"}
+---
+image: /images/services/csd.png
+---
 
 If you struggle to keep your team's capacity aligned with your business demands,
 we offer an established self-managing software development team. As a team that
@@ -89,30 +94,23 @@ At Mouseless, we've designed our collective to be centered around the software
 engineering profession. This environment naturally encourages us to research,
 experiment, and share our learnings with our customers.
 
-#image
-
-![icon](images/services/csd.png)
+::::
 
 :::
 
 :br
+
+:::columns
+
+#rs
+
+# Software Re-engineering
 :br
 
-:::banner
-
-## Software Re-engineering
-
-We offer our expertise to update and maintain your legacy in-house software.
-
-:::
-
-:::columns{:itemWidths='["15%", "85%"]'}
-
-#image
-
-![icon](images/services/sr.png)
-
-#text
+::::box{title="We offer our expertise to update and maintain your legacy in-house software" image-align="right"}
+---
+image: /images/services/sr.png
+---
 
 If you develop an in-house software, it's likely to become outdated and miss out
 essential technology upgrades. Organizations naturally prioritize their business
@@ -122,6 +120,8 @@ professional attention.
 We're more than willing to offer our expertise to take full responsibility for
 such systems. It enables your workforce to focus on business concerns while
 granting us an opportunity to address engineering challenges.
+
+::::
 
 :::
 

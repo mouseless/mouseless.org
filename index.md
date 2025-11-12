@@ -11,7 +11,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-### Crafting software;
+## Crafting software;
 # Where your vision,
 # meets our passion
 

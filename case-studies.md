@@ -28,9 +28,9 @@ for our clients.
 
 #text
 
-:include{content="contents/tech-stacks/yk.md"}
-
 ## Yurtiçi Kargo
+
+:include{content="contents/tech-stacks/yk.md"}
 
 We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
@@ -40,6 +40,8 @@ We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 - __Project Management__: GitLab, Jira, Mattermost
 
 ::::
+
+:br
 
 ::::details
 
@@ -82,9 +84,9 @@ us over the years to balance excellence and efficiency.
 
 #text
 
-:include{content="contents/tech-stacks/inventiv.md"}
-
 ## Inventiv - Multinet Up
+
+:include{content="contents/tech-stacks/inventiv.md"}
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][] for the customer.
@@ -95,6 +97,8 @@ an open source service framework [Routine][] for the customer.
 - __Project Management__: GitHub, Azure DevOps, Microsoft Teams
 
 ::::
+
+:br
 
 ::::details
 
@@ -144,9 +148,9 @@ grateful.
 
 #text
 
-:include{content="contents/tech-stacks/forward.md"}
-
 ## Forward
+
+:include{content="contents/tech-stacks/forward.md"}
 
 We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
@@ -158,6 +162,8 @@ their customers integrate with CRM and more.
 - __Project Management__: GitHub, Slack
 
 ::::
+
+:br
 
 ::::details
 

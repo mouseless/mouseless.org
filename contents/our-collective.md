@@ -16,4 +16,6 @@ We are a team of software engineers guided by our people-centric philosophy.
 
 ::
 
+:br
+
 [See more](our-collective.md)

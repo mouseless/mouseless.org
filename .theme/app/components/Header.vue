@@ -1,22 +1,39 @@
 <template>
-  <header class="header s s--pv_md">
-    <NuxtLink class="header__logo" to="/">
-      <img class="mouseless logo d d--v_m">
-      <img class="mouseless logo short d d--h_m">
+  <header
+    class="
+      header flex justify-between py-md
+      max-sm:py-sm
+    "
+  >
+    <NuxtLink class="content-center leading-[0]" to="/">
+      <img class="mouseless logo max-md:hidden">
+      <img class="mouseless logo short hidden max-md:block">
     </NuxtLink>
     <div
       v-if="menuShown"
-      class="header__overlay d d--h_s"
+      class="sm:hidden fixed w-full h-full top-0 left-0 bg-darkgreen-900 opacity-50"
       @click="close"
     />
-    <div class="header__menu-container">
+    <div class="flex gap-sm">
       <nav
-        class="header__menu menu"
-        :class="{ 'menu--active': menuShown }"
+        class="
+          font-default pt-xs
+          max-sm:hidden max-sm:flex-col max-sm:fixed
+          max-sm:top-0 max-sm:right-0 max-sm:w-1/2
+          max-sm:h-full max-sm:bg-darkgreen-900
+          max-sm:pt-0 max-sm:z-1
+          max-sm:min-w-[calc(var(--page-min)*0.75)]
+          max-sm:border-l-(length:--space-xs) max-sm:border-darkgreen-800
+        "
+        :class="{ 'max-sm:flex!': menuShown }"
       >
         <NuxtLink
           to="javascript:void(0)"
-          class="menu__item d d--h_s s s--mb_sm f f--xl"
+          class="
+            no-underline sm:hidden mb-sm text-xl
+            max-sm:ml-sm max-sm:py-xs
+            max-sm:text-light-link max-sm:hover:text-light-link-hover
+          "
           @click="toggle"
         >
           <i class="fa-solid fa-close" />
@@ -24,10 +41,17 @@
         <NuxtLink
           v-for="menu in menus"
           :key="menu['menu-title'] ?? menu.title"
-          class="menu__item s s--mh_sm s--mv_xs s--pb_sm"
+          class="
+            mx-sm my-xs pb-sm
+            max-sm:ml-sm max-sm:py-xs
+            max-sm:text-light-link max-sm:hover:text-light-link-hover!
+            max-sm:hover:border-b-0
+          "
           :class="{
-            'menu__item--selected': menu.path === root,
-            'link': menu.path !== root
+            'text-dark-link hover:text-dark-link border-b border-dark-link': menu.path === root,
+            'max-sm:border-b-0! max-sm:border-l-(length:--space-xs) max-sm:border-l-light-link-hover': menu.path === root,
+            'max-sm:-ml-xs! max-sm:pl-sm': menu.path === root,
+            'hover:text-dark-link-hover! hover:border-b border-dark-link-hover': menu.path !== root
           }"
           :to="menu.path == $route.path ? '' : menu.path"
           @click="close"
@@ -35,15 +59,15 @@
           {{ menu['menu-title'] ?? menu.title }}
         </NuxtLink>
       </nav>
-      <nav class="header__menu">
+      <nav class="font-default">
         <LinkButton
           text="contact us"
-          class="header__menu-item"
+          class="no-underline"
           to="#contact-us"
         />
         <NuxtLink
           to="javascript:void(0)"
-          class="header__menu-item d d--h_s s s--ml_md"
+          class="no-underline sm:hidden ml-sm"
           @click="toggle"
         >
           <i class="fa-solid fa-bars" />
@@ -65,103 +89,3 @@ const menuShown = ref(false);
 function toggle() { menuShown.value = !menuShown.value; }
 function close() { menuShown.value = false; }
 </script>
-<style lang="scss" scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-
-  &__logo {
-    align-content: center;
-    line-height: 0;
-  }
-
-  &__menu {
-    font-family: var(--font-default);
-  }
-
-  &__menu-container {
-    display: flex;
-    gap: var(--space-sm);
-  }
-}
-
-.menu {
-  padding-top: var(--space-xs);
-
-  &__item {
-    text-decoration: none;
-
-    &--selected {
-      color: var(--color-dark-link);
-      border-bottom: solid 1px var(--color-dark-link);
-    }
-  }
-}
-
-.link {
-  &:hover {
-    color: var(--color-dark-link-hover);
-    border-bottom: solid 1px var(--color-dark-link-hover);
-  }
-}
-
-@media (max-width: $page-s) {
-  .header {
-    padding: var(--space-sm) 0;
-
-    &__overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: var(--color-darkgreen-900);
-      opacity: 0.5;
-      padding: 0;
-      margin: 0;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50%;
-    min-width: $page-min*0.75;
-    height: 100%;
-    z-index: 1;
-    padding-top: 0;
-    border-left: solid var(--space-xs) var(--color-darkgreen-800);
-    background-color: var(--color-darkgreen-900);
-
-    &--active {
-      display: flex;
-    }
-
-    &__item {
-      color: var(--color-light-link);
-      margin-left: var(--space-sm);
-      padding: var(--space-xs) 0;
-
-      &:hover {
-        color: var(--color-light-link-hover);
-        border-bottom: 0;
-      }
-
-      &--selected {
-        color: var(--color-light-link);
-        border-bottom: none;
-        border-left: solid var(--space-xs) var(--color-light-link-hover);
-        margin-left: calc(var(--space-xs) * -1);
-        padding-left: var(--space-sm);
-
-        &:hover {
-          color: var(--color-light-link);
-        }
-      }
-    }
-  }
-}
-</style>

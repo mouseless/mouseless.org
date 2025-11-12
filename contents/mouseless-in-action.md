@@ -17,6 +17,6 @@ repos:
   - learn-dotnet
   - learn-javascript
   - mouseless.art
-  - mouseless.codes
+  - mouseless.org
 ---
 ::

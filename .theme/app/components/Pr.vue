@@ -1,36 +1,43 @@
 <template>
-  <div class="pr">
-    <h3 class="pr__title title">
+  <div
+    class="flex flex-col rounded bg-darkgreen-800 p-md text-bg overflow-hidden"
+    :style="{ height }"
+  >
+    <h3 class="inline-flex flex-col mb-xs items-start text-bg! whitespace-nowrap">
       {{ pr?.title }}
       <div
-        class="title__state"
-        :class="`title__state--${getState(pr)}`"
+        class="flex items-center gap-2 rounded capitalize h-8 px-4 text-fg text-[50%]"
+        :class="[
+          getState(pr) === 'draft' ? 'bg-gray-500' :
+          getState(pr) === 'open' ? 'bg-green-500' :
+          getState(pr) === 'closed' ? 'bg-red-700 text-gray-100' :
+          getState(pr) === 'merged' ? 'bg-blue-600 text-gray-100' : ''
+        ]"
       >
         <img
-          class="title__state-icon"
+          class="w-4 h-4"
           :src="`/components/pr/${getState(pr)}.svg`"
         >
         {{ getState(pr) }}
       </div>
     </h3>
-    <div class="pr__body">
+    <div class="flex-2 overflow-hidden c--pr-body">
       <MarkdownFormat :body="pr?.body" tag="article" />
     </div>
-    <NuxtLink :to="pr?.html_url" class="pr__link">
-      See in GitHub
-    </NuxtLink>
+    <div class="block text-bg no-underline text-center -mb-md py-xs leading-md hover:text-light-link-hover">
+      <NuxtLink
+        :to="pr?.html_url"
+        class="rounded-xs px-sm py-xs bg-green-900 hover:bg-green-600 text-bg hover:text-fg"
+      >
+        See in <i class="fa-brands fa-github ml-1" /> GitHub
+      </NuxtLink>
+    </div>
   </div>
 </template>
 <script setup>
 defineProps({
-  pr: {
-    type: Object,
-    default: null
-  },
-  height: {
-    type: String,
-    default: null
-  }
+  pr: { type: Object, default: null },
+  height: { type: String, default: null }
 });
 function getState(object) {
   if(object.state === "closed") {
@@ -40,100 +47,3 @@ function getState(object) {
   return object.draft ? "draft" : "open";
 }
 </script>
-<style lang="scss" scoped>
-.pr {
-  background-color: var(--color-darkgreen-800);
-  border-radius: var(--space-md);
-  color: var(--color-bg);
-  padding: var(--space-md);
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: min-content auto min-content;
-  height: v-bind(height);
-
-  &__title {
-    margin-bottom: var(--space-xs);
-    color: var(--color-bg);
-  }
-
-  &__body {
-    overflow: hidden;
-  }
-
-  &__link {
-    display: block;
-    color: var(--color-bg);
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: calc(var(--space-md) * -1);
-    line-height: var(--space-md);
-
-    &:hover {
-      color: var(--color-light-link-hover);
-    }
-  }
-}
-
-.title {
-  display: inline-flex;
-  align-items: flex-start;
-  flex-direction: column;
-  max-width: calc($page-min / 2);
-  white-space: nowrap;
-
-  &__state {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    border-radius: var(--border-radius);
-    text-transform: capitalize;
-    padding: 0 1em;
-    font-size: 40%;
-    height: 2em;
-    color: var(--color-fg);
-
-    &--draft { background-color: var(--color-gray-500); }
-    &--open { background-color: var(--color-green-500); }
-    &--closed { background-color: var(--color-red-700); color: var(--color-gray-100); }
-    &--merged { background-color: var(--color-blue-600); color: var(--color-gray-100); }
-  }
-
-  &__state-icon {
-    width: 1em;
-    height: 1em;
-  }
-}
-</style>
-<style lang="scss">
-.pr {
-  &__body {
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 2em; }
-    h3 { font-size: 1.7em; }
-    h4 { font-size: 1.5em; }
-    h5 { font-size: 1.25em; }
-    h6 { font-size: 1.125em; }
-
-    a, h1, h2, h3, h4, h5, h6 {
-      color: var(--color-light-text-heading) !important;
-    }
-
-    a:hover {
-      color: var(--color-green-500) !important;
-    }
-
-    code, a {
-      word-break: break-all;
-      white-space: break-spaces;
-    }
-
-    pre {
-      background-color: var(--color-darkgreen-700);
-      border-radius: var(--space-sm);
-      padding: var(--space-sm);
-      line-height: var(--space-sm);
-    }
-  }
-}
-
-</style>

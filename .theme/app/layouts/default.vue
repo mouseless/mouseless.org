@@ -1,22 +1,9 @@
 <template>
-  <Header class="content" />
-  <article class="article">
+  <Header class="c--content" />
+  <article class="w-full text-center">
     <slot />
   </article>
-  <Footer class="content" />
+  <Footer class="c--content" />
 </template>
-<style lang="scss">
-.article {
-  width: 100%;
-  text-align: center;
-
-  > div > * {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  p {
-    max-width: 100%;
-  }
-}
+<style>
 </style>

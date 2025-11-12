@@ -13,7 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-### Experiment and learn, while
+## Experiment and learn, while
 # Delivering at pace
 
 We are a __self-managing__ team with a single point of contact assigned per
@@ -57,7 +57,7 @@ flowchart TB
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -110,8 +110,7 @@ we manage tech upgrades.
 
 #### Apply Upgrades
 
-Using our headless opinionated .NET framework we manage to easily upgrade
-customer projects.
+Using our opinionated framework we manage to easily upgrade customer projects.
 
 :link-button{to="https://baked.mouseless.codes/release-notes/v0-13#net-upgrade" text="See in Baked"}
 
@@ -123,7 +122,7 @@ customer projects.
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -178,7 +177,7 @@ See how we build software incrementally;
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -233,7 +232,7 @@ See how we care work descriptions and tasks;
 
 :::banner
 
-::::columns{:itemWidths='["80%", "20%"]'}
+::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
 #text
 
@@ -267,7 +266,7 @@ exchange, enhancing innovation across the community.
 
 #### Baked
 
-Check out Baked, our opinionated framework for .NET;
+Check out Baked, our opinionated framework for .NET and Vue;
 
 :link-button{to="https://baked.mouseless.codes" text="See Baked"}
 

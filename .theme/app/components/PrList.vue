@@ -1,27 +1,37 @@
 <template>
-  <div class="pr-list">
-    <div class="pr-list__repos">
-      <div class="repo-list">
-        <ul class="repo-list__items">
-          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+  <div class="flex flex-col gap-sm mt-md">
+    <div>
+      <div
+         class="
+           flex flex-row items-end p-0
+           max-sm:flex-col max-sm:items-start max-sm:gap-sm
+         "
+       >
+        <ul class="flex flex-row flex-wrap gap-2 max-w-[90%] m-0 p-0">
+          <li v-for="(repo, index) in repos" :key="repo" class=":marker:content-none">
             <button
-              class="repo-list__item-link"
-              :class="[
-                `repo-list__item-link--color_${color}`,
-                {'repo-list__item-link--active': index == repoIndex},
-              ]"
+              class="
+                rounded-xs cursor-pointer px-sm py-xs
+                text-[length:medium] whitespace-nowrap
+                leading-[normal] hover:bg-gray-400
+              "
+              :class="{
+                'bg-gray-300 text-darkgreen-900': color === 'dark',
+                'bg-bg-mute text-fg': color === 'light',
+                'bg-darkgreen-700! text-gray-100': index == repoIndex
+              }"
               @click="changeSlider(index)"
             >
               {{ repo }}
             </button>
           </li>
         </ul>
-        <Switcher :action="switcher" :status="prState" class="repo-list__switcher" />
+        <Switcher :action="switcher" :status="prState" class="ml-auto mr-0 max-sm:ml-0 max-sm:mr-auto" />
       </div>
     </div>
-    <div class="pr-list__prs">
-      <div v-if="!render" class="pr-list__loading loading">
-        <div class="loading__icon" />
+    <div class="m-auto w-full">
+      <div v-if="!render" :style="{ height }" class="flex items-center" >
+        <div class="border-4 border-solid border-bg-soft border-l-fg rounded-full h-12 w-12 mx-[auto] my-0 animate-spin" />
       </div>
       <SliderInner
         v-if="render"
@@ -35,14 +45,13 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else class="pr-list__see-more pr">
-            <div class="pr__body">
-              To see more pull requests, please visit
-              <NuxtLink
-                :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
-                :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
-              />
-            </div>
+          <div v-else :style="{ height }" class="rounded bg-darkgreen-800 p-md text-bg">
+            <span>To see more pull requests, please visit </span>
+            <NuxtLink
+              :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
+              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
+              class="text-light-text-heading hover:text-green-500 underline"
+            />
           </div>
         </template>
       </SliderInner>
@@ -51,14 +60,8 @@
 </template>
 <script setup>
 const props = defineProps({
-  height: {
-    type: String,
-    default: "50ch"
-  },
-  repos: {
-    type: Array,
-    default: () => []
-  }
+  height: { type: String, default: "60ch" },
+  repos: { type: Array, default: () => [] }
 });
 
 const github = useGitHub();
@@ -95,122 +98,3 @@ async function getPullRequests(state) {
   return result;
 }
 </script>
-<style lang="scss">
-.pr-list {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-
-  &__prs {
-    margin: auto;
-    width: 100%;
-  }
-
-  &__see-more {
-    color: var(--color-gray-100);
-    background-color: var(--color-darkgreen-800);
-    border-radius: var(--border-radius);
-    padding: var(--border-radius);
-    height: v-bind(height);
-  }
-}
-
-.loading {
-  display: flex;
-  align-items: center;
-  height: v-bind(height);
-
-  &__icon {
-    animation: spin 1s linear infinite;
-    border: 4px solid var(--color-bg-soft);
-    border-left-color: var(--color-fg);
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-}
-
-.repo-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0;
-
-  &__items {
-    margin: 0;
-    padding: 0;
-    max-width: 90%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-
-  &__item {
-    &::marker {
-      content: none;
-    }
-  }
-
-  &__item-link {
-    background-color: var(--color-darkgreen-700);
-    border: 0px;
-    cursor: pointer;
-    border-radius: var(--space-xs);
-    width: 100%;
-    padding: var(--space-xs) var(--space-sm);
-    text-align: left;
-    white-space: nowrap;
-    font-family: var(--font-default);
-    font-size: medium;
-
-    &--color{
-      &_dark {
-        background-color: var(--color-gray-300);
-        color: var(--color-darkgreen-900);
-      }
-
-      &_light {
-        background-color: var(--color-bg-mute);
-        color: var(--color-fg);
-      }
-    }
-
-    &:hover {
-      background-color: var(--color-gray-400);
-    }
-
-    &--active, &--active:hover {
-      background-color: var(--color-darkgreen-700);
-      color: var(--color-gray-100);
-    }
-  }
-
-  &__switcher {
-    margin-left: auto;
-    margin-right: 0
-  }
-}
-
-@media (max-width: $page-s) {
-  .repo-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-sm);
-
-    &__switcher {
-      margin-left: 0;
-      margin-right: auto;
-    }
-  }
-}
-</style>

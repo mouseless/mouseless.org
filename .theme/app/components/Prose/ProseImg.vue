@@ -3,63 +3,14 @@
     :src="src"
     :width="width"
     :height="height"
-    class="prose"
-    :class="`${alt} ${alt}--color_${color}`"
+    class="max-w-full rounded"
   />
 </template>
 <script setup>
 defineProps({
-  src: {
-    type: String,
-    default: ""
-  },
-  alt: {
-    type: String,
-    default: ""
-  },
-  width: {
-    type: [String, Number],
-    default: undefined
-  },
-  height: {
-    type: [String, Number],
-    default: undefined
-  }
+  src: { type: String, default: "" },
+  alt: { type: String, default: "" },
+  width: { type: [String, Number], default: undefined },
+  height: { type: [String, Number], default: undefined }
 });
-
-const color = inject("block-child-color", "dark");
 </script>
-<style lang="scss" scoped>
-img {
-  max-width: 100%;
-  border-radius: var(--border-radius);
-}
-
-.icon, .diagram {
-  border-radius: 0;
-}
-
-.diagram {
-  min-width: 100%;
-
-  &--color {
-    &_dark {
-      filter: invert(1) hue-rotate(185deg) contrast(1.1) brightness(1.2);
-    }
-  }
-}
-</style>
-<style lang="scss">
-p:has(.diagram) {
-  padding: var(--space-sm);
-  border-radius: var(--border-radius);
-}
-
-p:has(.diagram--color_dark) {
-  background-color: var(--color-dark-box-bg);
-}
-
-p:has(.diagram--color_light) {
-  background-color: var(--color-light-box-bg);
-}
-</style>
