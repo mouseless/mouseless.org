@@ -5,7 +5,7 @@
       max-lg:flex-col
       max-md:gap-sm
     "
-    :class="imageAlign === 'left' ? 'flex-row-reverse' : ''"
+    :class="imageAlign === 'right' ? 'flex-row-reverse' : ''"
   >
     <Image
       v-if="image !== null"
