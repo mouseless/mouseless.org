@@ -7,6 +7,10 @@ seo-description: >
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
+> TODO
+>
+> Remove paragraphs from blocks
+
 ::block{color=black}
 
 :::banner
