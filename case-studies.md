@@ -13,8 +13,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-#### Through long-term partnerships;
-## We build value, together.
+#### We build value, together;
+## Through long-term partnerships.
 
 :::
 
