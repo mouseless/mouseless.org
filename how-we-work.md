@@ -26,7 +26,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 flowchart TB
     R(Requirement<br>Emerges)
 
-    subgraph LC[Done in 5 days]
+    subgraph LC[Done in days]
         W(Work starts<br>with Draft PR)
         S(Write specs<br>as automated<br>tests)
         DR(Develop &<br>Code Review)
@@ -59,8 +59,8 @@ flowchart TB
 
 ### Low Cost of Change
 
-Our approach minimizes change costs through automated testing and continuous
-refactoring, ensuring adaptability without additional expenses.
+Automated testing and continuous refactoring let us adapt quickly while keeping
+costs low.
 
 :::::bullet-list
 
@@ -72,7 +72,7 @@ refactoring, ensuring adaptability without additional expenses.
 
 #image
 
-![icon](images/how-we-work/lcoc.png)
+![low cost of change](images/how-we-work/lcoc.png)
 
 ::::
 
@@ -88,7 +88,7 @@ refactoring, ensuring adaptability without additional expenses.
 
 #### Tests and Coverage
 
-Check out one of our open source project, Baked, to see how we utilize test
+Check out our open source project, [Baked][], to see how we utilize test
 automation;
 
 :link-button{to="https://github.com/mouseless/baked/actions/runs/18309280610" text="See in GitHub"}
@@ -108,7 +108,7 @@ we manage tech upgrades.
 
 Using our opinionated framework we manage to easily upgrade customer projects.
 
-:link-button{to="https://baked.mouseless.codes/release-notes/v0-13#net-upgrade" text="See in Baked"}
+:link-button{to="https://baked.mouseless.codes/release-notes/v0/#v0130" text="See in Baked"}
 
 :::
 
@@ -124,8 +124,8 @@ Using our opinionated framework we manage to easily upgrade customer projects.
 
 ### Continuous Delivery
 
-We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
-setup, prioritizing efficiency and reliability.
+We guarantee rapid delivery with an end-to-end CI/CD setup, prioritizing
+efficiency and reliability.
 
 :::::bullet-list
 
@@ -137,7 +137,7 @@ setup, prioritizing efficiency and reliability.
 
 #image
 
-![icon](images/how-we-work/cd.png)
+![continous delivery](images/how-we-work/cd.png)
 
 ::::
 
@@ -153,7 +153,7 @@ setup, prioritizing efficiency and reliability.
 
 #### Frequent Releases
 
-Check out Baked releases to see frequency of our delivery cycle;
+Check out [Baked][] releases to see frequency of our delivery cycle;
 
 :link-button{to="https://github.com/mouseless/baked/releases" text="See in GitHub"}
 
@@ -179,8 +179,8 @@ See how we build software incrementally;
 
 ### Progress Visibility
 
-Through draft PRs from project inception, detailed task management, and clear
-communication, we maintain transparency at every development stage.
+We stay transparent at every stage through draft PRs, clear tasks, and open
+communication.
 
 :::::bullet-list
 
@@ -192,7 +192,7 @@ communication, we maintain transparency at every development stage.
 
 #image
 
-![icon](images/how-we-work/pv.png)
+![progress visibility](images/how-we-work/pv.png)
 
 ::::
 
@@ -234,8 +234,8 @@ See how we care work descriptions and tasks;
 
 ### Cross Pollination
 
-Our commitment to open source and diverse project engagement promotes knowledge
-exchange, enhancing innovation across the community.
+Our focus on open source and diverse projects encourages knowledge sharing and
+supports innovation.
 
 :::::bullet-list
 
@@ -246,7 +246,7 @@ exchange, enhancing innovation across the community.
 
 #image
 
-![icon](images/how-we-work/cp.png)
+![cross pollination](images/how-we-work/cp.png)
 
 ::::
 
@@ -300,3 +300,5 @@ See what we've open sourced so far;
 :include{content="contents/questions/common.md"}
 
 ::
+
+[Baked]: https://baked.mouseless.codes

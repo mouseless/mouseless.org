@@ -45,8 +45,8 @@
   }
 
   img {
-    &.icon { @apply inline rounded-none px-xs max-h-[1lh]; }
-    &.logo:not(.mouseless) { @apply inline bg-bg-soft rounded-xs px-sm py-xs h-[1.5lh]; }
+    &.icon { @apply rounded-none mx-xs max-h-[0.75lh]!; }
+    &.logo:not(.mouseless) { @apply bg-bg-soft rounded-xs px-sm py-xs h-[1.5lh]!; }
   }
 
   /* banner */
@@ -100,7 +100,7 @@
 
   .c--column.c--column--image-icon {
     & > p > img {
-      @apply max-md:max-h-30 max-md:ml-0 max-sm:max-h-20;
+      @apply rounded-none max-md:max-h-30 max-md:ml-0 max-sm:max-h-20;
     }
   }
 

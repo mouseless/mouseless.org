@@ -1,11 +1,9 @@
 ::banner
 
 ### Balancing quality and productivity
-### with our unique approach
 
-We run on a flexible, pay-as-you-go model. We prioritize timely feature
-delivery, automated testing, code refactoring, and keeping technology up to date
-without extra cost.
+We run on a flexible, pay-as-you-go model, delivering features quickly with
+automated testing, refactoring, and up-to-date technology at no extra cost.
 
 ::
 
@@ -19,8 +17,8 @@ without extra cost.
 
 ##### Low Cost of Change
 
-Our approach minimizes change costs through automated testing and continuous
-refactoring, ensuring adaptability without additional expenses.
+Automated testing and continuous refactoring let us adapt quickly while keeping
+costs low.
 
 [See more](how-we-work.md#low-cost-of-change)
 
@@ -32,8 +30,8 @@ refactoring, ensuring adaptability without additional expenses.
 
 ##### Continuous Delivery
 
-We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
-setup, prioritizing efficiency and reliability.
+We guarantee rapid delivery with an end-to-end CI/CD setup, prioritizing
+efficiency and reliability.
 
 [See more](how-we-work.md#continuous-delivery)
 
@@ -45,8 +43,8 @@ setup, prioritizing efficiency and reliability.
 
 ##### Progress Visibility
 
-Through draft PRs from project inception, detailed task management, and clear
-communication, we maintain transparency at every development stage.
+We stay transparent at every stage through draft PRs, clear tasks, and open
+communication.
 
 [See more](how-we-work.md#progress-visibility)
 
@@ -58,8 +56,8 @@ communication, we maintain transparency at every development stage.
 
 ##### Cross Pollination
 
-Our commitment to open source and diverse project engagement promotes knowledge
-exchange, enhancing innovation across the community.
+Our focus on open source and diverse projects encourages knowledge sharing and
+supports innovation.
 
 [See more](how-we-work.md#cross-pollination)
 

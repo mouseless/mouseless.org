@@ -2,8 +2,8 @@
 
 ## Let's meet
 
-We believe the key to build a long-term partnership is the eagerness to meet new
-people anytime anywhere.
+Feel free to arrange a meeting with us anytime if you'd like to explore working
+together.
 
 :br
 

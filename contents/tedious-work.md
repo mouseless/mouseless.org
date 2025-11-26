@@ -1,13 +1,15 @@
 ::banner
 
-### We are ready to tackle all the tedious work!
+### We develop software outside your core focus
 
-We develop custom software solutions for both SMEs and large enterprises,
-specializing in keeping high-tech companies at the forefront of technology while
-offering modernization services for low-tech environments.
+We focus on your non-core business needs, developing custom software solutions
+for both SMEs and large enterprises.
 
 ::
 
-![csd icon](/images/services/csd.png) [Custom Software Development](services.md#custom-software-development)
-
-![sr icon](/images/services/sr.png) [Software Re-engineering](services.md#software-re-engineering)
+Helping high-tech companies stay at the forefront with [![csd
+icon](/images/services/csd.png)Custom Software
+Development](services.md#custom-software-development) and modernizing low-tech
+environments with [![sr icon](/images/services/sr.png)Software
+Re-engineering](services.md#software-re-engineering), our services keep
+customers competitive.
