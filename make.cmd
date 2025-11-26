@@ -20,7 +20,7 @@ echo Invalid command: %CMD%
 exit /b 1
 
 :install
-cd .theme && npm i && cd ..
+cd .theme && call npm i && cd ..
 goto end
 
 :run
@@ -32,15 +32,15 @@ if "%choice%"=="1" goto dev
 if "%choice%"=="2" goto local
 
 :dev
-cd .theme && npm run dev && cd ..
+cd .theme && call npm run dev && cd ..
 goto end
 
 :local
-cd .theme && npm run local && cd ..
+cd .theme && call npm run local && cd ..
 goto end
 
 :build
-cd .theme && npm run generate:local && cd ..
+cd .theme && call npm run generate:local && cd ..
 goto end
 
 :end
