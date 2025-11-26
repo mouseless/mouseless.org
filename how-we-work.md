@@ -13,12 +13,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-## Experiment and learn, while
-# Delivering at pace
-
-We are a __self-managing__ team with a single point of contact assigned per
-client, operating on a __time & materials__ basis without requiring a
-fixed-budget or a fixed-plan thanks to our fast response time.
+#### Experiment and learn;
+## Deliver at pace.
 
 :::
 

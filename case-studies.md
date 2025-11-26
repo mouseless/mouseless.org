@@ -13,10 +13,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-# Building value, together
-
-Explore our real-world success stories and discover how we've made a difference
-for our clients.
+#### Through long-term partnerships;
+## We build value, together.
 
 :::
 
@@ -28,9 +26,9 @@ for our clients.
 
 #text
 
-## Yurtiçi Kargo
-
-:include{content="contents/tech-stacks/yk.md"}
+::::h2{id="yurtici-kargo"}
+![yurtiçi kargo logo](images/case-studies/yk-logo.svg)
+::::
 
 We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
@@ -41,13 +39,15 @@ We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
 ::::
 
+:include{content="contents/tech-stacks/yk.md"}
+
 :br
 
 ::::details
 
 :::::summary
 
-:link-button{text="Read more..."}
+Read more...
 
 :::::
 
@@ -84,9 +84,9 @@ us over the years to balance excellence and efficiency.
 
 #text
 
-## Inventiv - Multinet Up
-
-:include{content="contents/tech-stacks/inventiv.md"}
+::::h2{id="multinet-up"}
+![multinet-up logo](images/case-studies/mn-logo.svg)
+::::
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][] for the customer.
@@ -98,17 +98,19 @@ an open source service framework [Routine][] for the customer.
 
 ::::
 
+:include{content="contents/tech-stacks/multinet-up.md"}
+
 :br
 
 ::::details
 
 :::::summary
 
-:link-button{text="Read more..."}
+Read more...
 
 :::::
 
-[Inventiv][] is the technology subsidiary of [Multinet Up][], specializing in
+[Inventiv][] is the technology subsidiary of [Multinet | Up][], specializing in
 payment technology. They have a strong in-house software development culture,
 providing us with the opportunity to explore innovative ways to develop
 software. This led us to create their backend framework, [Gazel][], and their
@@ -148,9 +150,9 @@ grateful.
 
 #text
 
-## Forward
-
-:include{content="contents/tech-stacks/forward.md"}
+::::h2{id="forward"}
+![forward logo](images/case-studies/fw-logo.png)
+::::
 
 We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
@@ -163,13 +165,15 @@ their customers integrate with CRM and more.
 
 ::::
 
+:include{content="contents/tech-stacks/forward.md"}
+
 :br
 
 ::::details
 
 :::::summary
 
-:link-button{text="Read more..."}
+Read more...
 
 :::::
 
@@ -217,6 +221,6 @@ relationship, we are happy to support Forwardians in achieving their goals.
 [Forward]: https://dealforward.com/
 [Gazel]: https://gazel.io/
 [Inventiv]: https://inventiv.com.tr/en/home
-[Multinet Up]: https://multinet.com.tr/
+[Multinet | Up]: https://multinet.com.tr/
 [Routine]: https://github.com/multinetinventiv/routine
 [Yurtiçi Kargo]: https://yurticikargo.com

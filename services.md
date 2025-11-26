@@ -13,12 +13,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-## We offer;
-# Software Development
-# as a Service
-
-We build long-term partnerships to take __full responsibility__ of in-house
-software and modernize legacy systems.
+#### We offer;
+## Software Development as a Service.
 
 :::
 
