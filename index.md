@@ -13,11 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ## Crafting software;
 # Where your vision,
-# meets our passion
-
-Hire an elite __software engineering team__ with no management and HR overhead,
-completely self-managing, taking full responsibility. Explore the best way to
-work with software engineers.
+# meets our passion.
 
 :::
 

@@ -4,25 +4,19 @@
 
 ## Contact us
 
-We're more than happy to meet and discover ways to collaborate.
+Providing your project details, company, and discussion points when reaching out
+helps us have a productive conversation.
 
 :::
 
-:::columns
+Send an e-mail to [connect@mouseless.org][] or join our Matrix space via
+[#collective:mouseless.org][].
 
-#mail
-
-Send an e-mail to [connect@mouseless.org](mailto:connect@mouseless.org).
-
-Or join our matrix space via
-[#collective:mouseless.org](https://matrix.to/#/#collective:mouseless.org)
-
-#maps
+You're also welcome to visit our office in person.
 
 :maps
 
-We’re a remote and independent collective, yet we sometimes gather here.
-
-:::
-
 ::
+
+[connect@mouseless.org]: mailto:connect@mouseless.org
+[#collective:mouseless.org]: https://matrix.to/#/#collective:mouseless.org

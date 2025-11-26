@@ -5,14 +5,14 @@
 
 We are a team of software engineers guided by our people-centric philosophy.
 
-::
-
-::bullet-list
+:::bullet-list
 
 - Passionate
 - Efficient
 - Unconventional
 - Excellent
+
+:::
 
 ::
 

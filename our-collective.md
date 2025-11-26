@@ -13,11 +13,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-## A software development collective;
-# Connected through the craft
-
-Our collective is a team of software engineers guided by our people-centric
-philosophy, focusing on delivering quality work collaboratively.
+#### A software development collective;
+## Connected through the craft.
 
 :::
 

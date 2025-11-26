@@ -4,6 +4,7 @@
     :width="width"
     :height="height"
     class="max-w-full rounded"
+    :class="alt"
   />
 </template>
 <script setup>

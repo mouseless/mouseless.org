@@ -15,7 +15,7 @@ for our clients.
 
 #text
 
-#### Yurtiçi Kargo
+#### [![yurtiçi kargo logo](images/case-studies/yk-logo.svg)](/case-studies#yurtici-kargo)
 
 We’re rebuilding and maintaining [Yurtiçi Kargo][]’s legacy internal dashboard
 with modern tools for a faster, cleaner, and more reliable experience.
@@ -24,7 +24,7 @@ with modern tools for a faster, cleaner, and more reliable experience.
 
 :br
 
-:link-button{to="/case-studies#yurtiçi-kargo" text="See more"}
+[See more](/case-studies#yurtici-kargo)
 
 #image
 
@@ -38,16 +38,16 @@ with modern tools for a faster, cleaner, and more reliable experience.
 
 #text
 
-#### Inventiv - Multinet Up
+#### [![multinet-up logo](images/case-studies/mn-logo.svg)](/case-studies#multinet-up)
 
-We've built [Inventiv][]'s internal software development framework [Gazel][] and
-an open source service framework [Routine][].
+We've built [Multinet | Up][]'s internal software development framework
+[Gazel][] and an open source service framework [Routine][].
 
-:include{content="/contents/tech-stacks/inventiv.md"}
+:include{content="/contents/tech-stacks/multinet-up.md"}
 
 :br
 
-:link-button{to="/case-studies#inventiv-multinet-up" text="See more"}
+[See more](/case-studies#multinet-up)
 
 #image
 
@@ -61,7 +61,7 @@ an open source service framework [Routine][].
 
 #text
 
-#### Forward
+#### [![forward logo](images/case-studies/fw-logo.png)](/case-studies#forward)
 
 We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
@@ -70,7 +70,7 @@ their customers integrate with CRM and more.
 
 :br
 
-:link-button{to="/case-studies#forward" text="See more"}
+[See more](/case-studies#forward)
 
 #image
 
@@ -82,6 +82,6 @@ their customers integrate with CRM and more.
 
 [Forward]: https://dealforward.com/
 [Gazel]: https://gazel.io/
-[Inventiv]: https://inventiv.com.tr/en/home
+[Multinet | Up]: https://multinet.com.tr/
 [Routine]: https://github.com/multinetinventiv/routine
 [Yurtiçi Kargo]: https://yurticikargo.com

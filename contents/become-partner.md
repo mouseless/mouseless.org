@@ -38,7 +38,7 @@ this negotiation, our team will be ready to work whenever you need a support.
 #### Deliver
 
 You provide us with a roughly prioritized set of work items and let us deliver
-working software within an average of 3-day lead-time. At this point you will
+working software within an average of 5-day lead-time. At this point you will
 receive a monthly progress report where you can see cost of each work item
 separately.
 
