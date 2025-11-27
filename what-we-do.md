@@ -1,11 +1,11 @@
 ---
-title: mouseless -- services
-menu-title: services
-position: 1
+title: mouseless -- what we do
+menu-title: what we do
+position: 3
 seo-title: >
-  > mouseless -- services_
+  > mouseless -- what we do_
 seo-description: >
-  We offer; software development as a service
+  We offer; software development as a service.
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -78,7 +78,7 @@ quadrantChart
 
 ::::box{title="We provide an agile, self-managing software development team to align with your business demands." image-align="left"}
 ---
-image: /images/services/csd.png
+image: /images/what-we-do/csd.png
 ---
 
 If you struggle to keep your team's capacity aligned with your business demands,
@@ -105,7 +105,7 @@ experiment, and share our learnings with our customers.
 
 ::::box{title="We offer our expertise to update and maintain your legacy in-house software" image-align="right"}
 ---
-image: /images/services/sr.png
+image: /images/what-we-do/sr.png
 ---
 
 If you develop an in-house software, it's likely to become outdated and miss out

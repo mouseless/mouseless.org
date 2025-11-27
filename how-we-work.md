@@ -1,11 +1,11 @@
 ---
 title: mouseless -- how we work
 menu-title: how we work
-position: 3
+position: 2
 seo-title: >
   > mouseless -- how we work_
 seo-description: >
-  Experiment and learn, while delivering at pace
+  Experiment and learn; deliver at pace.
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -72,7 +72,7 @@ costs low.
 
 #image
 
-![low cost of change](images/how-we-work/lcoc.png)
+![low cost of change](images/how we work/lcoc.png)
 
 ::::
 

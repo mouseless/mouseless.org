@@ -1,11 +1,11 @@
 ---
-title: mouseless -- our collective
-menu-title: our collective
-position: 4
+title: mouseless -- who we are
+menu-title: who we are
+position: 1
 seo-title: >
-  > mouseless -- our collective_
+  > mouseless -- who we are_
 seo-description: >
-  A software development collective, connected through the craft
+  A software development collective; connected through the craft.
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -81,7 +81,7 @@ which eventually leads to excellence.
 
 #passionate
 
-::::card{image="images/our-collective/passionate.png"}
+::::card{image="images/who-we-are/passionate.png"}
 
 ### Passionate
 
@@ -94,7 +94,7 @@ engaged.
 
 #efficient
 
-::::card{image="images/our-collective/efficient.png"}
+::::card{image="images/who-we-are/efficient.png"}
 
 ### Efficient
 
@@ -106,7 +106,7 @@ effective scope management and incremental delivery.
 
 #unconventional
 
-::::card{image="images/our-collective/unconventional.png"}
+::::card{image="images/who-we-are/unconventional.png"}
 
 ### Unconventional
 
@@ -118,7 +118,7 @@ with stepping out of the comfort zone, inviting the unconventional.
 
 #excellent
 
-::::card{image="images/our-collective/excellent.png"}
+::::card{image="images/who-we-are/excellent.png"}
 
 ### Excellent
 

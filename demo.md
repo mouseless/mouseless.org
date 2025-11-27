@@ -25,7 +25,7 @@ Lorem **ipsum** dolor sit amet consectetur adipisicing elit.
 
 :::box{title="Box Header" image-align="left"}
 ---
-image: images/services/sr.png
+image: images/what-we-do/sr.png
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::box{title="Box Header" image-align="right"}
 ---
-image: images/services/csd.png
+image: images/what-we-do/csd.png
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -68,7 +68,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 #item-1
 
-::::card{image="images/our-collective/efficient.png"}
+::::card{image="images/who-we-are/efficient.png"}
 
 ### Lorem ipsum
 
@@ -79,7 +79,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 #item-2
 
-::::card{image="images/our-collective/excellent.png"}
+::::card{image="images/who-we-are/excellent.png"}
 
 ### Iusto fuga
 
@@ -90,7 +90,7 @@ autem.
 
 #item-3
 
-::::card{image="images/our-collective/passionate.png"}
+::::card{image="images/who-we-are/passionate.png"}
 
 ### Veritatis obcaecati
 
@@ -238,7 +238,7 @@ _Italic Text_
 
 [External Link](http://mouseless.codes)
 
-![](images/our-collective/unconventional.png)
+![](images/who-we-are/unconventional.png)
 
 ## Slider
 
