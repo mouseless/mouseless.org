@@ -72,7 +72,7 @@ costs low.
 
 #image
 
-![low cost of change](images/how we work/lcoc.png)
+![low cost of change](images/how-we-work/lcoc.png)
 
 ::::
 
