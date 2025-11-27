@@ -45,27 +45,20 @@ those, we are eager to embrace the opportunity.
 
 :::summary
 
-##### [What are your pricing options?]()
+##### [What’s your pricing model?]()
 
 :hr
 
 :::
 
-We operate on a pay-as-you-go basis, meaning you only pay for the work
-completed. There are no extra management or HR costs for you. Additionally, we
-handle technology upgrades for the software systems we maintain at no additional
-cost, leveraging our cross-pollination and open-source approach.
+We operate on a pay-as-you-go basis, meaning customers pay for the work
+completed. This gives us the flexibility to handle technology upgrades freely
+without tight deadlines, leveraging our cross-pollination and open-source
+approach.
 
-Each engineer has a seniority rate that determines their monthly contribution.
-This helps us calculate costs transparently. Our single price policy makes it
-easy for you to compare our services with other providers.
-
-If you’d like more details, please feel free to [reach out](#contact-us).
+Every developer in the collective has a seniority rate that determines their
+monthly contribution. This helps us calculate costs transparently. Our single
+price policy makes it easy for our customers to compare our services with other
+providers.
 
 ::
-
-:br
-
-...
-
-If you have other questions in mind, please reach out to us from below.

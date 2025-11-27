@@ -2,10 +2,10 @@
 
 :::banner
 
-## Contact us
+## Join us
 
-Providing your project details, company, and discussion points when reaching out
-helps us have a productive conversation.
+Share a bit about yourself, your company, your interests and what you’d like to
+discuss. This will help us understand you better.
 
 :::
 

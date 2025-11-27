@@ -61,9 +61,9 @@
       </nav>
       <nav class="font-default">
         <LinkButton
-          text="contact us"
+          text="join us"
           class="no-underline"
-          to="#contact-us"
+          to="#join-us"
         />
         <NuxtLink
           to="javascript:void(0)"

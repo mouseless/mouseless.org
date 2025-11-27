@@ -1,9 +1,9 @@
 ::banner
 
-### We develop software outside your core focus
+### We remain business-domain agnostic
 
-We focus on your non-core business needs, developing custom software solutions
-for both SMEs and large enterprises.
+We focus on our customers' non-core business needs, developing custom software
+solutions for both SMEs and large enterprises.
 
 ::
 
