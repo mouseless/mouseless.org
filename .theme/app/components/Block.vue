@@ -4,8 +4,7 @@
     :class="{
       'bg-darkgreen-900': currentColor === 'black',
       'bg-gray-100': currentColor === 'white',
-      'bg-blue-900': currentColor === 'blue',
-      'bg-green-900': currentColor === 'green',
+      'bg-red-800': currentColor === 'red',
       'text-dark-text-normal': colors[currentColor] === 'dark',
       'text-light-text-normal': colors[currentColor] === 'light',
       [colors[currentColor]]: true
@@ -28,8 +27,7 @@
         :class="{
           'bg-darkgreen-900': item === 'black',
           'bg-gray-100': item === 'white',
-          'bg-blue-900': item === 'blue',
-          'bg-green-900': item === 'green'
+          'bg-red-800': item === 'red'
         }"
         @click="backgroundChange(item)"
       />
@@ -50,8 +48,7 @@ const props = defineProps({
 const colors = {
   black: "light",
   white: "dark",
-  blue: "light",
-  green: "light"
+  red: "light"
 };
 const currentColor = ref(props.color);
 const childColor = computed(() => colors[currentColor.value] || "dark");

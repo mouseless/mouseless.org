@@ -1,8 +1,8 @@
 <template>
   <header
     class="
-      header flex justify-between py-md
-      max-sm:py-sm
+      header flex justify-between py-[2em]
+      max-lg:py-sm
     "
   >
     <NuxtLink class="content-center leading-[0]" to="/">

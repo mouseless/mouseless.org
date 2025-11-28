@@ -203,11 +203,7 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 :block{content="contents/lets-meet.md"}
 :block{content="contents/tedious-work.md" color=black}
-:block{content="contents/balancing-quality.md"}
-:block{content="contents/lets-meet.md" color=black}
 :block{content="contents/mouseless-in-action.md"}
-:block{content="contents/our-collective.md" color=black}
-:block{content="contents/lets-meet.md"}
 
 ::block{color=black}
 
