@@ -28,22 +28,19 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ::::banner
 
-### Let's match your business needs
+### Matching the business needs of our clients
 
-We're here to develop software solutions, whether you're a small startup or a
-big player in the market.
+We build software solutions for clients of all sizes, from small startups to
+major enterprises.
 
 ::::
 
-For large enterprises in high-tech environments, we specialize in developing
-custom software solutions to keep them at the forefront of technology.
-Similarly, for those in low-tech environments, we offer modernizing legacy
-systems to enhance efficiency and competitiveness.
+We build custom software to keep large enterprises ahead, whether in high-tech
+or low-tech environments. For low-tech, we modernize legacy systems to improve
+efficiency.
 
-For small and medium-sized enterprises (SMEs) navigating high-tech landscapes,
-we offer expertise in scaling their growth through strategic IT solutions. While
-we recognize the importance of SMEs in low-tech environments, our focus lies
-elsewhere at present.
+For SMEs, we focus exclusively on those in high-tech sectors, helping them grow
+with custom software solutions.
 
 #chart
 
@@ -51,10 +48,10 @@ elsewhere at present.
 quadrantChart
     x-axis SME --> Large Enterprise
     y-axis Low Tech --> High Tech
-    quadrant-1 "✔️  Develop Custom Software"
-    quadrant-2 "✔️  Scale Your Growth"
-    quadrant-3 "✖️  Outside Our Focus"
-    quadrant-4 "✔️  Modernize Legacy Systems"
+    quadrant-1 "✔️  Custom Software"
+    quadrant-2 "✔️  Scale Growth"
+    quadrant-3 "✖️  Not Our Focus"
+    quadrant-4 "✔️  Modernize Legacy"
 ```
 
 :::
@@ -76,19 +73,19 @@ quadrantChart
 # Custom Software Development
 :br
 
-::::box{title="We provide an agile, self-managing software development team to align with your business demands." image-align="left"}
+::::box{title="We provide a self-managing software development team." image-align="left"}
 ---
 image: /images/what-we-do/csd.png
 ---
 
-If you struggle to keep your team's capacity aligned with your business demands,
-we offer an established self-managing software development team. As a team that
-embraces agile software development practices, we eagerly tackle any engineering
-challenge.
+For our clients who struggle to keep their team's capacity aligned with their
+business demands, we offer an established self-managing software development
+team. As a team that embraces modern software development practices, we eagerly
+tackle any engineering challenge.
 
 At Mouseless, we've designed our collective to be centered around the software
-engineering profession. This environment naturally encourages us to research,
-experiment, and share our learnings with our customers.
+developer profession. This environment naturally encourages us to research,
+experiment, and share our learnings with our clients.
 
 ::::
 
@@ -103,19 +100,19 @@ experiment, and share our learnings with our customers.
 # Software Re-engineering
 :br
 
-::::box{title="We offer our expertise to update and maintain your legacy in-house software" image-align="right"}
+::::box{title="We offer our expertise to update and maintain legacy in-house software." image-align="right"}
 ---
 image: /images/what-we-do/sr.png
 ---
 
-If you develop an in-house software, it's likely to become outdated and miss out
-essential technology upgrades. Organizations naturally prioritize their business
-challenges over technical needs which creates a persistent problem that requires
-professional attention.
+For our clients that develop in-house software, their systems are likely to
+become outdated and miss out on essential technology upgrades. Organizations
+naturally prioritize their business challenges over technical needs which
+creates a persistent problem that requires dedicated technical support.
 
-We're more than willing to offer our expertise to take full responsibility for
-such systems. It enables your workforce to focus on business concerns while
-granting us an opportunity to address engineering challenges.
+We’re ready to offer our expertise to take full responsibility for such systems.
+This lets our clients' team focus on business priorities while we handle the
+engineering challenges.
 
 ::::
 
@@ -124,11 +121,11 @@ granting us an opportunity to address engineering challenges.
 ::
 
 :block{content="contents/become-partner.md" color=black}
-:block{content="contents/lets-meet.md"}
-:block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/explore-long-term.md"}
+:block{content="contents/lets-meet.md" color=black}
 :block{content="contents/balancing-quality.md"}
 :block{content="contents/our-collective.md" color=black}
-:block{content="contents/lets-meet.md"}
+:block{content="contents/mouseless-in-action.md"}
 
 ::block{color=black}
 

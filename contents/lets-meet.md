@@ -2,7 +2,7 @@
 
 ## Let’s connect
 
-If what we do feels like a fit, we’d be happy to meet.
+If what you see feels like a fit, we’d be happy to meet.
 
 ::
 

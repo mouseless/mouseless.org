@@ -2,7 +2,7 @@
 
 ### We remain business-domain agnostic
 
-We focus on our customers' non-core business needs, developing custom software
+We focus on our clients' non-core business needs, developing custom software
 solutions for both SMEs and large enterprises.
 
 ::
@@ -12,4 +12,4 @@ icon](/images/what-we-do/csd.png)Custom Software
 Development](what-we-do.md#custom-software-development) and modernizing low-tech
 environments with [![sr icon](/images/what-we-do/sr.png)Software
 Re-engineering](what-we-do.md#software-re-engineering), our services keep
-customers competitive.
+clients competitive.

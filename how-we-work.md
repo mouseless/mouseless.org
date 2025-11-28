@@ -46,9 +46,6 @@ flowchart TB
 
 ::
 
-:block{content="contents/become-partner.md"}
-:block{content="contents/lets-meet.md" color=black}
-
 ::block
 
 :::banner
@@ -97,8 +94,8 @@ automation;
 
 #### Research Upgrades
 
-We provide our customers with technology upgrades out of the box. Check out how
-we manage tech upgrades.
+We provide our clients with technology upgrades out of the box. Check out how we
+manage tech upgrades.
 
 :link-button{to="https://github.com/mouseless/learn-nuxt/pull/68" text="See in GitHub"}
 
@@ -106,7 +103,7 @@ we manage tech upgrades.
 
 #### Apply Upgrades
 
-Using our opinionated framework we manage to easily upgrade customer projects.
+Using our opinionated framework we manage to easily upgrade client projects.
 
 :link-button{to="https://baked.mouseless.codes/release-notes/v0/#v0130" text="See in Baked"}
 
@@ -287,9 +284,9 @@ See what we've open sourced so far;
 ::
 
 :block{content="contents/lets-meet.md"}
-:block{content="contents/tedious-work.md" color=black}
-:block{content="contents/explore-long-term.md"}
 :block{content="contents/our-collective.md" color=black}
+:block{content="contents/tedious-work.md"}
+:block{content="contents/explore-long-term.md" color=black}
 :block{content="contents/lets-meet.md"}
 
 ::block{color=black}
