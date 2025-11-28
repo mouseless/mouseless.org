@@ -2,8 +2,8 @@
 
 ### Balancing quality and productivity
 
-We run on a flexible, pay-as-you-go model, delivering features quickly with
-automated testing, refactoring, and up-to-date technology at no extra cost.
+We operate on a flexible, per-person/per-day pricing model and deliver features
+quickly using automated testing and continuous refactoring.
 
 ::
 

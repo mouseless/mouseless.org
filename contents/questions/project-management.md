@@ -59,7 +59,7 @@ viable and functional software and deploy it to production as soon as possible,
 usually within 2-4 weeks.
 
 We continue developing new versions while providing support for the production
-version. If you find a version sufficient at any given moment, we focus on
+version. If client finds a version sufficient at any given moment, we focus on
 maintaining it by addressing bugs and issues, as well as applying technology
 upgrades.
 

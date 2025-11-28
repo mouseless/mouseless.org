@@ -15,20 +15,20 @@ for our clients.
 
 #text
 
-#### [![yurtiçi kargo logo](images/case-studies/yk-logo.svg)](/case-studies#yurtici-kargo)
+#### [![yurtiçi kargo logo](images/projects/yk-logo.svg)](/projects#yurtici-kargo)
 
 We’re rebuilding and maintaining [Yurtiçi Kargo][]’s legacy internal dashboard
 with modern tools for a faster, cleaner, and more reliable experience.
 
-:include{content="/contents/tech-stacks/yk.md"}
+:include{content="contents/tech-stacks/yk.md"}
 
 :br
 
-[See more](/case-studies#yurtici-kargo)
+[See more](/projects#yurtici-kargo)
 
 #image
 
-![Yurtiçi Kargo - MisPort](images/case-studies/yk-misport.png)
+![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
 
 :::
 
@@ -38,20 +38,20 @@ with modern tools for a faster, cleaner, and more reliable experience.
 
 #text
 
-#### [![multinet-up logo](images/case-studies/mn-logo.svg)](/case-studies#multinet-up)
+#### [![multinet-up logo](images/projects/mn-logo.svg)](/projects#multinet-up)
 
 We've built [Multinet | Up][]'s internal software development framework
 [Gazel][] and an open source service framework [Routine][].
 
-:include{content="/contents/tech-stacks/multinet-up.md"}
+:include{content="contents/tech-stacks/multinet-up.md"}
 
 :br
 
-[See more](/case-studies#multinet-up)
+[See more](/projects#multinet-up)
 
 #image
 
-![Inventiv - Gazel - Website](/images/case-studies/inventiv-gazel-website.png)
+![Inventiv - Gazel - Website](/images/projects/inventiv-gazel-website.png)
 
 :::
 
@@ -61,7 +61,7 @@ We've built [Multinet | Up][]'s internal software development framework
 
 #text
 
-#### [![forward logo](images/case-studies/fw-logo.png)](/case-studies#forward)
+#### [![forward logo](images/projects/fw-logo.png)](/projects#forward)
 
 We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
@@ -70,11 +70,11 @@ their customers integrate with CRM and more.
 
 :br
 
-[See more](/case-studies#forward)
+[See more](/projects#forward)
 
 #image
 
-![Forward - Gateway - ApiDoc](/images/case-studies/forward-gateway-apidoc.png)
+![Forward - Gateway - ApiDoc](/images/projects/forward-gateway-apidoc.png)
 
 :::
 

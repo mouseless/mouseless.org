@@ -1,11 +1,11 @@
 ---
-title: mouseless -- our collective
-menu-title: our collective
-position: 4
+title: mouseless -- who we are
+menu-title: who we are
+position: 1
 seo-title: >
-  > mouseless -- our collective_
+  > mouseless -- who we are_
 seo-description: >
-  A software development collective, connected through the craft
+  A software development collective; connected through the craft.
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -30,13 +30,13 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ### Our structure
 
-At Mouseless, we function as a cohesive team of engineers. Our structure is
+At Mouseless, we function as a cohesive team of developers. Our structure is
 designed to promote collaboration and communication, aligning with our
 people-centric philosophy.
 
 ::::
 
-Within our collective, one of our engineers serves as the single point of
+Within our collective, one of our developers serves as the single point of
 contact, managing all client communications and operations seamlessly. This
 ensures clear and efficient communication, allowing us to focus on delivering
 continuous software increments.
@@ -81,11 +81,11 @@ which eventually leads to excellence.
 
 #passionate
 
-::::card{image="images/our-collective/passionate.png"}
+::::card{image="images/who-we-are/passionate.png"}
 
 ### Passionate
 
-As software engineers, we constantly debate over better and cleaner ways to
+As software developers, we constantly debate over better and cleaner ways to
 write code, even after its delivery. It's not just about the end product; it's
 the inherently elegant and fascinating nature of the work itself that keeps us
 engaged.
@@ -94,7 +94,7 @@ engaged.
 
 #efficient
 
-::::card{image="images/our-collective/efficient.png"}
+::::card{image="images/who-we-are/efficient.png"}
 
 ### Efficient
 
@@ -106,7 +106,7 @@ effective scope management and incremental delivery.
 
 #unconventional
 
-::::card{image="images/our-collective/unconventional.png"}
+::::card{image="images/who-we-are/unconventional.png"}
 
 ### Unconventional
 
@@ -118,7 +118,7 @@ with stepping out of the comfort zone, inviting the unconventional.
 
 #excellent
 
-::::card{image="images/our-collective/excellent.png"}
+::::card{image="images/who-we-are/excellent.png"}
 
 ### Excellent
 
@@ -152,7 +152,7 @@ We are exclusive in expertise, inclusive in participation.
 
 #### Team
 
-We are independent engineers who are committed to work in accordance with [the
+We are independent developers who are committed to work in accordance with [the
 mouseless way](./how-we-work.md) where everyone has a contribution rate that
 aligns with their level of experience in the field.
 
@@ -160,14 +160,14 @@ aligns with their level of experience in the field.
 
 #join
 
-#### Join us
+#### Newcomers
 
-If you are an experienced software engineer and you think you align with our
+If you are an experienced software developer and you think you align with our
 principles and appreciate what you've seen in [github.com/mouseless][github],
 let us know.
 
 If you are a recent graduate seeking opportunities, consider our __Fresh
-Engineer__ program. You join us as a new graduate. We'll guide you through our
+Developer__ program. You join us as a new graduate. We'll guide you through our
 way, assign you with real customer tasks, and regraduate you after two years of
 dedicated work.
 
@@ -177,10 +177,9 @@ dedicated work.
 
 ```mermaid
 flowchart TB
-    1([ ]) --Junior--> 2([ ])
+    1([ ]) --Associate--> 2([ ])
     2 --Senior--> 3([ ])
-    3 --Lead--> 4([ ])
-    4 --Principal--> 5([ ])
+    3 --Staff--> 4([ ])
 ```
 
 :::

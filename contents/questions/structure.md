@@ -30,12 +30,12 @@ Recognizing this, we've chosen to be a collective.
 
 :::
 
-When you engage with a company, your agreement typically guarantees your bond
-with its legal entity, not its personnel.
+When a company engages with a company, their agreement typically guarantees the
+bond with a legal entity, not its personnel.
 
 At Mouseless, we prioritize our people over their legal entities. We work
 together not only for business reasons, but also due to our shared interest in
-the profession of software engineering.
+the profession of software development.
 
 This structure provides our clients with a low turnover rate while maintaining
 professional relationships through the companies of our people.

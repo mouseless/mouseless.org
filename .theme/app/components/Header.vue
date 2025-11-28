@@ -60,10 +60,22 @@
         </NuxtLink>
       </nav>
       <nav class="font-default">
+        <NuxtLink
+          to="https://github.com/mouseless"
+          target="_blank"
+        >
+          <i class="mx-xs fab fa-github" />
+        </NuxtLink>
+        <NuxtLink
+          to="https://www.linkedin.com/company/mouseless-collective/"
+          target="_blank"
+        >
+          <i class="mx-xs fab fa-linkedin" />
+        </NuxtLink>
         <LinkButton
-          text="contact us"
-          class="no-underline"
-          to="#contact-us"
+          text="join us"
+          class="no-underline mx-xs"
+          to="#join-us"
         />
         <NuxtLink
           to="javascript:void(0)"

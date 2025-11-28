@@ -33,9 +33,21 @@
           {{ menu['menu-title'] ?? menu.title }}
         </NuxtLink>
         <NuxtLink
+          to="https://github.com/mouseless"
+          target="_blank"
+        >
+          <i class="fab fa-github" />
+        </NuxtLink>
+        <NuxtLink
+          to="https://www.linkedin.com/company/mouseless-collective/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin" />
+        </NuxtLink>
+        <NuxtLink
           to="//brand.mouseless.codes"
           class="
-            ml-sm no-underline
+            no-underline
             max-md:ml-0 max-md:mt-xs
           "
           target="_blank"

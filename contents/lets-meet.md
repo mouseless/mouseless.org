@@ -1,12 +1,9 @@
 ::banner
 
-## Let's meet
+## Let’s connect
 
-Feel free to arrange a meeting with us anytime if you'd like to explore working
-together.
-
-:br
-
-:link-button{to="#contact-us" type="cta" text="Reach out"}
+If what you see feels like a fit, we’d be happy to meet.
 
 ::
+
+:link-button{to="#join-us" type="cta" text="Join us"}

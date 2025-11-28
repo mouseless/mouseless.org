@@ -1,9 +1,9 @@
 ---
-title: mouseless -- case studies
-menu-title: case studies
-position: 2
+title: mouseless -- projects
+menu-title: projects
+position: 4
 seo-title: >
-  > mouseless -- case studies_
+  > mouseless -- projects_
 seo-description: >
   Building value, together
 seo-image: images/logo-profile-mark-primary-500px.png
@@ -27,7 +27,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 #text
 
 ::::h2{id="yurtici-kargo"}
-![yurtiçi kargo logo](images/case-studies/yk-logo.svg)
+![yurtiçi kargo logo](images/projects/yk-logo.svg)
 ::::
 
 We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
@@ -72,7 +72,7 @@ us over the years to balance excellence and efficiency.
 
 #image
 
-![Yurtiçi Kargo - MisPort](images/case-studies/yk-misport.png)
+![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
 
 :::
 
@@ -85,11 +85,11 @@ us over the years to balance excellence and efficiency.
 #text
 
 ::::h2{id="multinet-up"}
-![multinet-up logo](images/case-studies/mn-logo.svg)
+![multinet-up logo](images/projects/mn-logo.svg)
 ::::
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
-an open source service framework [Routine][] for the customer.
+an open source service framework [Routine][] for the client.
 
 ::::bullet-list
 
@@ -138,7 +138,7 @@ grateful.
 
 #image
 
-![Inventiv - Gazel - Website](images/case-studies/inventiv-gazel-website.png)
+![Inventiv - Gazel - Website](images/projects/inventiv-gazel-website.png)
 
 :::
 
@@ -151,7 +151,7 @@ grateful.
 #text
 
 ::::h2{id="forward"}
-![forward logo](images/case-studies/fw-logo.png)
+![forward logo](images/projects/fw-logo.png)
 ::::
 
 We've built the integration gateway server for [Forward][]'s web app to allow
@@ -195,7 +195,7 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 #image
 
-![Forward - Gateway - ApiDoc](images/case-studies/forward-gateway-apidoc.png)
+![Forward - Gateway - ApiDoc](images/projects/forward-gateway-apidoc.png)
 
 :::
 
