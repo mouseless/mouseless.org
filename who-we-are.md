@@ -188,9 +188,7 @@ flowchart TB
 
 :block{content="contents/lets-meet.md"}
 :block{content="contents/balancing-quality.md" color=black}
-:block{content="contents/tedious-work.md"}
-:block{content="contents/explore-long-term.md" color=black}
-:block{content="contents/lets-meet.md"}
+:block{content="contents/explore-long-term.md"}
 
 ::block{color=black}
 
