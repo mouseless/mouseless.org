@@ -5,7 +5,7 @@ position: 1
 seo-title: >
   > mouseless -- who we are_
 seo-description: >
-  A software development collective; connected through the craft.
+  A software developer collective; connected through the craft.
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -13,7 +13,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 :::banner
 
-#### A software development collective;
+#### A software developer collective;
 ## Connected through the craft.
 
 :::
