@@ -14,7 +14,7 @@
         <NuxtLink to="/">
           <img class="mouseless logo mono short h-3">
         </NuxtLink>
-        <span class="ml-1">&copy; 2025, GC Brains.</span>
+        <span class="ml-1">&copy; 2026, GC Brains.</span>
       </div>
       <div
         class="
