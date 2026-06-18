@@ -8,9 +8,9 @@ jobs:
     name: Generate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Setup NodeJS
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
       - name: Disable AppArmour
@@ -21,7 +21,7 @@ jobs:
           npm install
           npm run generate:production
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: output
           path: .theme/.output/public
@@ -36,11 +36,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: output
-      - name: SFTP upload
-        uses: Dylan700/sftp-upload-action@latest
+      - name: SFTP Upload
+        uses: wangyucode/sftp-upload-action@v3
         with:
-          server: mouseless.org
+          host: mouseless.org
           username: root
           password: ${{secrets.FTP_PASSWORD}}
-          delete: true
-          uploads: ./ => /var/www/mouseless.org/
+          localDir: './'
+          remoteDir: '/var/www/mouseless.org'
+          removeExtraFilesOnServer: true
