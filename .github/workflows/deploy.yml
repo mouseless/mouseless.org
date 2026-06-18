@@ -48,4 +48,3 @@ jobs:
           localDir: './'
           remoteDir: '/var/www/mouseless.org'
           removeExtraFilesOnServer: true
-          concurrency: 10
