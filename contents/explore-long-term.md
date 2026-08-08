@@ -11,72 +11,72 @@ for our clients.
 
 #yk
 
-:::columns{:itemWidths='["65%","35%"]'}
+    :::columns{:itemWidths='["65%","35%"]'}
 
-#text
+    #text
 
-#### [![yurtiçi kargo logo](images/projects/yk-logo.svg)](/projects#yurtici-kargo)
+    #### [![yurtiçi kargo logo](images/projects/yk-logo.svg)](/projects#yurtici-kargo)
 
-We’re rebuilding and maintaining [Yurtiçi Kargo][]’s legacy internal dashboard
-with modern tools for a faster, cleaner, and more reliable experience.
+    We’re rebuilding and maintaining [Yurtiçi Kargo][]’s legacy internal dashboard
+    with modern tools for a faster, cleaner, and more reliable experience.
 
-:include{content="contents/tech-stacks/yk.md"}
+    :include{content="contents/tech-stacks/yk.md"}
 
-:br
+    :br
 
-[See more](/projects#yurtici-kargo)
+    [See more](/projects#yurtici-kargo)
 
-#image
+    #image
 
-![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
+    ![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
 
-:::
+    :::
 
 #inventiv
 
-:::columns{:itemWidths='["55%","45%"]'}
+    :::columns{:itemWidths='["55%","45%"]'}
 
-#text
+    #text
 
-#### [![multinet-up logo](images/projects/mn-logo.svg)](/projects#multinet-up)
+    #### [![multinet-up logo](images/projects/mn-logo.svg)](/projects#multinet-up)
 
-We've built [Multinet | Up][]'s internal software development framework
-[Gazel][] and an open source service framework [Routine][].
+    We've built [Multinet | Up][]'s internal software development framework
+    [Gazel][] and an open source service framework [Routine][].
 
-:include{content="contents/tech-stacks/multinet-up.md"}
+    :include{content="contents/tech-stacks/multinet-up.md"}
 
-:br
+    :br
 
-[See more](/projects#multinet-up)
+    [See more](/projects#multinet-up)
 
-#image
+    #image
 
-![Inventiv - Gazel - Website](/images/projects/inventiv-gazel-website.png)
+    ![Inventiv - Gazel - Website](/images/projects/inventiv-gazel-website.png)
 
-:::
+    :::
 
 #forward
 
-:::columns{:itemWidths='["65%","35%"]'}
+    :::columns{:itemWidths='["65%","35%"]'}
 
-#text
+    #text
 
-#### [![forward logo](images/projects/fw-logo.png)](/projects#forward)
+    #### [![forward logo](images/projects/fw-logo.png)](/projects#forward)
 
-We've built the integration gateway server for [Forward][]'s web app to allow
-their customers integrate with CRM and more.
+    We've built the integration gateway server for [Forward][]'s web app to allow
+    their customers integrate with CRM and more.
 
-:include{content="contents/tech-stacks/forward.md"}
+    :include{content="contents/tech-stacks/forward.md"}
 
-:br
+    :br
 
-[See more](/projects#forward)
+    [See more](/projects#forward)
 
-#image
+    #image
 
-![Forward - Gateway - ApiDoc](/images/projects/forward-gateway-apidoc.png)
+    ![Forward - Gateway - ApiDoc](/images/projects/forward-gateway-apidoc.png)
 
-:::
+    :::
 
 ::
 

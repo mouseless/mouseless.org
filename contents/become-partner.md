@@ -9,7 +9,7 @@ of the collaboration.
 
 :br
 
-:::steps{:titles='["Develop", "Deliver", "Expand", "Refer"]' height="22ch"}
+::steps{:titles='["Develop", "Deliver", "Expand", "Refer"]' height="22ch"}
 
 #develop
 
@@ -43,4 +43,4 @@ As clients see the value we provide and through the professional networks we’v
 built over our careers, new opportunities and referrals naturally arise,
 connecting us with other businesses that can benefit from our work.
 
-:::
+::

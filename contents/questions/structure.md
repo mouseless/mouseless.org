@@ -1,12 +1,12 @@
 ::details
 
-:::summary
+  :::summary
 
-##### [Why a collective?]()
+  ##### [Why a collective?]()
 
-:hr
+  :hr
 
-:::
+  :::
 
 A collective is inherently centered around its people, creating an environment
 of communication and efficiency. In contrast, a business centers on its core
@@ -22,13 +22,13 @@ Recognizing this, we've chosen to be a collective.
 
 ::details
 
-:::summary
+  :::summary
 
-##### [What should I consider when working with a collective?]()
+  ##### [What should I consider when working with a collective?]()
 
-:hr
+  :hr
 
-:::
+  :::
 
 When a company engages with a company, their agreement typically guarantees the
 bond with a legal entity, not its personnel.

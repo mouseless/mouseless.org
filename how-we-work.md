@@ -11,12 +11,12 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ::block
 
-:::banner
+  :::banner
 
-#### Experiment and learn;
-## Deliver at pace.
+  #### Experiment and learn;
+  ## Deliver at pace.
 
-:::
+  :::
 
 ::
 
@@ -48,238 +48,238 @@ flowchart TB
 
 ::block
 
-:::banner
+  :::banner
 
-::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
+    ::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
-#text
+    #text
 
-### Low Cost of Change
+    ### Low Cost of Change
 
-Automated testing and continuous refactoring let us adapt quickly while keeping
-costs low.
+    Automated testing and continuous refactoring let us adapt quickly while keeping
+    costs low.
 
-:::::bullet-list
+      :::::bullet-list
 
-- Test automation
-- Refactoring
-- Tech-stack update
+      - Test automation
+      - Refactoring
+      - Tech-stack update
 
-:::::
+      :::::
 
-#image
+    #image
 
-![low cost of change](images/how-we-work/lcoc.png)
+    ![low cost of change](images/how-we-work/lcoc.png)
 
-::::
+    ::::
 
-:::
+  :::
 
 :br
 
 ### See in action
 
-:::columns
+  :::columns
 
-#baked-builds
+  #baked-builds
 
-#### Tests and Coverage
+  #### Tests and Coverage
 
-Check out our open source project, [Baked][], to see how we utilize test
-automation;
+  Check out our open source project, [Baked][], to see how we utilize test
+  automation;
 
-:link-button{to="https://github.com/mouseless/baked/actions/runs/18309280610" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/baked/actions/runs/18309280610" text="See in GitHub"}
 
-#net-upgrade
+  #net-upgrade
 
-#### Research Upgrades
+  #### Research Upgrades
 
-We provide our clients with technology upgrades out of the box. Check out how we
-manage tech upgrades.
+  We provide our clients with technology upgrades out of the box. Check out how we
+  manage tech upgrades.
 
-:link-button{to="https://github.com/mouseless/learn-nuxt/pull/68" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/learn-nuxt/pull/68" text="See in GitHub"}
 
-#baked-net-upgrade
+  #baked-net-upgrade
 
-#### Apply Upgrades
+  #### Apply Upgrades
 
-Using our opinionated framework we manage to easily upgrade client projects.
+  Using our opinionated framework we manage to easily upgrade client projects.
 
-:link-button{to="https://baked.mouseless.codes/release-notes/v0/#v0130" text="See in Baked"}
+  :link-button{to="https://baked.mouseless.codes/release-notes/v0/#v0130" text="See in Baked"}
 
-:::
+  :::
 
 ::
 
 ::block{color=black}
 
-:::banner
+  :::banner
 
-::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
+    ::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
-#text
+    #text
 
-### Continuous Delivery
+    ### Continuous Delivery
 
-We guarantee rapid delivery with an end-to-end CI/CD setup, prioritizing
-efficiency and reliability.
+    We guarantee rapid delivery with an end-to-end CI/CD setup, prioritizing
+    efficiency and reliability.
 
-:::::bullet-list
+      :::::bullet-list
 
-- 5 days of average lead-time
-- No estimation, continuous planning
-- End to end CI/CD setup
+      - 5 days of average lead-time
+      - No estimation, continuous planning
+      - End to end CI/CD setup
 
-:::::
+      :::::
 
-#image
+    #image
 
-![continous delivery](images/how-we-work/cd.png)
+    ![continous delivery](images/how-we-work/cd.png)
 
-::::
+    ::::
 
-:::
+  :::
 
 :br
 
 ### See in action
 
-:::columns
+  :::columns
 
-#freq-releases
+  #freq-releases
 
-#### Frequent Releases
+  #### Frequent Releases
 
-Check out [Baked][] releases to see frequency of our delivery cycle;
+  Check out [Baked][] releases to see frequency of our delivery cycle;
 
-:link-button{to="https://github.com/mouseless/baked/releases" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/baked/releases" text="See in GitHub"}
 
-#lead-time
+  #lead-time
 
-#### Lead-Time
+  #### Lead-Time
 
-See how we build software incrementally;
+  See how we build software incrementally;
 
-:link-button{to="https://github.com/mouseless/baked/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/baked/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
 
-:::
+  :::
 
 ::
 
 ::block
 
-:::banner
+  :::banner
 
-::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
+    ::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
-#text
+    #text
 
-### Progress Visibility
+    ### Progress Visibility
 
-We stay transparent at every stage through draft PRs, clear tasks, and open
-communication.
+    We stay transparent at every stage through draft PRs, clear tasks, and open
+    communication.
 
-:::::bullet-list
+      :::::bullet-list
 
-- Draft PRs right from beginning
-- Well detailed task lists
-- Clear commit messages
+      - Draft PRs right from beginning
+      - Well detailed task lists
+      - Clear commit messages
 
-:::::
+      :::::
 
-#image
+    #image
 
-![progress visibility](images/how-we-work/pv.png)
+    ![progress visibility](images/how-we-work/pv.png)
 
-::::
+    ::::
 
-:::
+  :::
 
 :br
 
 ### See in action
 
-:::columns
+  :::columns
 
-#baked-epic
+  #baked-epic
 
-#### PRs
+  #### PRs
 
-Check out our live work right from GitHub;
+  Check out our live work right from GitHub;
 
-:link-button{to="https://github.com/mouseless/baked/pulls" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/baked/pulls" text="See in GitHub"}
 
-#learn-task
+  #learn-task
 
-#### Tasks
+  #### Tasks
 
-See how we care work descriptions and tasks;
+  See how we care work descriptions and tasks;
 
-:link-button{to="https://github.com/mouseless/baked/pull/312" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless/baked/pull/312" text="See in GitHub"}
 
-:::
+  :::
 
 ::
 
 ::block{color=black}
 
-:::banner
+  :::banner
 
-::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
+    ::::columns{:itemWidths='["80%", "20%"]' imageBehavior='icon'}
 
-#text
+    #text
 
-### Cross Pollination
+    ### Cross Pollination
 
-Our focus on open source and diverse projects encourages knowledge sharing and
-supports innovation.
+    Our focus on open source and diverse projects encourages knowledge sharing and
+    supports innovation.
 
-:::::bullet-list
+      :::::bullet-list
 
-- Open Source
-- Continuous Learning
+      - Open Source
+      - Continuous Learning
 
-:::::
+      :::::
 
-#image
+    #image
 
-![cross pollination](images/how-we-work/cp.png)
+    ![cross pollination](images/how-we-work/cp.png)
 
-::::
+    ::::
 
-:::
+  :::
 
 :br
 
 ### See in action
 
-:::columns
+  :::columns
 
-#baked-docs
+  #baked-docs
 
-#### Baked
+  #### Baked
 
-Check out Baked, our opinionated framework for .NET and Vue;
+  Check out Baked, our opinionated framework for .NET and Vue;
 
-:link-button{to="https://baked.mouseless.codes" text="See Baked"}
+  :link-button{to="https://baked.mouseless.codes" text="See Baked"}
 
-#learn-nuxt
+  #learn-nuxt
 
-#### Learn
+  #### Learn
 
-See how we learned, documented and use Nuxt;
+  See how we learned, documented and use Nuxt;
 
-:link-button{to="https://mouseless.github.io/learn-nuxt" text="Learn Nuxt"}
+  :link-button{to="https://mouseless.github.io/learn-nuxt" text="Learn Nuxt"}
 
-#all-open-source
+  #all-open-source
 
-#### Open Source
+  #### Open Source
 
-See what we've open sourced so far;
+  See what we've open sourced so far;
 
-:link-button{to="https://github.com/mouseless?type=public" text="See in GitHub"}
+  :link-button{to="https://github.com/mouseless?type=public" text="See in GitHub"}
 
-:::
+  :::
 
 ::
 
