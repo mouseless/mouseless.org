@@ -11,193 +11,193 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ::block
 
-:::banner
+  :::banner
 
-#### We build value, together;
-## Through long-term partnerships.
+  #### We build value, together;
+  ## Through long-term partnerships.
 
-:::
+  :::
 
 ::
 
 ::block{color=black}
 
-:::columns{:itemWidths='["100%", "100ch"]'}
+  :::columns{:itemWidths='["100%", "100ch"]'}
 
-#text
+  #text
 
-::::h2{id="yurtici-kargo"}
-![yurtiçi kargo logo](images/projects/yk-logo.svg)
-::::
+    ::::h2{id="yurtici-kargo"}
+    ![yurtiçi kargo logo](images/projects/yk-logo.svg)
+    ::::
 
-We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
+  We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
-::::bullet-list
+    ::::bullet-list
 
-- __Industry__: Logistics
-- __Project Management__: GitLab, Jira, Mattermost
+    - __Industry__: Logistics
+    - __Project Management__: GitLab, Jira, Mattermost
 
-::::
+    ::::
 
-:include{content="contents/tech-stacks/yk.md"}
+  :include{content="contents/tech-stacks/yk.md"}
 
-:br
+  :br
 
-::::details
+    ::::details
 
-:::::summary
+      :::::summary
 
-Read more...
+      Read more...
 
-:::::
+      :::::
 
-[Yurtiçi Kargo][] is one of Turkey's leading logistics companies, offering
-reliable and efficient parcel delivery services nationwide. With a strong focus
-on innovation, they continuously enhance their operations through technology and
-customer-focused solutions.
+    [Yurtiçi Kargo][] is one of Turkey's leading logistics companies, offering
+    reliable and efficient parcel delivery services nationwide. With a strong focus
+    on innovation, they continuously enhance their operations through technology and
+    customer-focused solutions.
 
-Their internal dashboard portal was outdated, making it an ideal candidate for
-our services. We successfully kicked off the project to rewrite the software
-using modern technologies and a refreshed user interface.
+    Their internal dashboard portal was outdated, making it an ideal candidate for
+    our services. We successfully kicked off the project to rewrite the software
+    using modern technologies and a refreshed user interface.
 
-### Our history
+    ### Our history
 
-Our connection dates back to the late 2000s, when we developed Yurtiçi Kargo's
-first mobile application, along with many other projects.
+    Our connection dates back to the late 2000s, when we developed Yurtiçi Kargo's
+    first mobile application, along with many other projects.
 
-Yurtiçi Kargo's strong corporate culture demands high-quality software, shaping
-us over the years to balance excellence and efficiency.
+    Yurtiçi Kargo's strong corporate culture demands high-quality software, shaping
+    us over the years to balance excellence and efficiency.
 
-::::
+    ::::
 
-#image
+  #image
 
-![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
+  ![Yurtiçi Kargo - MisPort](images/projects/yk-misport.png)
 
-:::
+  :::
 
 ::
 
 ::block
 
-:::columns{:itemWidths='["100%", "100ch"]'}
+  :::columns{:itemWidths='["100%", "100ch"]'}
 
-#text
+  #text
 
-::::h2{id="multinet-up"}
-![multinet-up logo](images/projects/mn-logo.svg)
-::::
+    ::::h2{id="multinet-up"}
+    ![multinet-up logo](images/projects/mn-logo.svg)
+    ::::
 
-We've built [Inventiv][]'s internal software development framework [Gazel][] and
-an open source service framework [Routine][] for the client.
+  We've built [Inventiv][]'s internal software development framework [Gazel][] and
+  an open source service framework [Routine][] for the client.
 
-::::bullet-list
+    ::::bullet-list
 
-- __Industry__: Fintech
-- __Project Management__: GitHub, Azure DevOps, Microsoft Teams
+    - __Industry__: Fintech
+    - __Project Management__: GitHub, Azure DevOps, Microsoft Teams
 
-::::
+    ::::
 
-:include{content="contents/tech-stacks/multinet-up.md"}
+  :include{content="contents/tech-stacks/multinet-up.md"}
 
-:br
+  :br
 
-::::details
+    ::::details
 
-:::::summary
+      :::::summary
 
-Read more...
+      Read more...
 
-:::::
+      :::::
 
-[Inventiv][] is the technology subsidiary of [Multinet | Up][], specializing in
-payment technology. They have a strong in-house software development culture,
-providing us with the opportunity to explore innovative ways to develop
-software. This led us to create their backend framework, [Gazel][], and their
-service framework, [Routine][], both in .NET.
+    [Inventiv][] is the technology subsidiary of [Multinet | Up][], specializing in
+    payment technology. They have a strong in-house software development culture,
+    providing us with the opportunity to explore innovative ways to develop
+    software. This led us to create their backend framework, [Gazel][], and their
+    service framework, [Routine][], both in .NET.
 
-The majority of Inventiv's software runs on Gazel, efficiently processing
-millions of daily payment transactions for _Multinet Up_ card users.
+    The majority of Inventiv's software runs on Gazel, efficiently processing
+    millions of daily payment transactions for _Multinet Up_ card users.
 
-We were directly responsible for Gazel's entire development. Our tasks included
-introducing new features, planning and managing releases, researching and
-implementing the latest .NET advancements into the framework, managing
-technology upgrades, and maintaining the framework's documentation.
+    We were directly responsible for Gazel's entire development. Our tasks included
+    introducing new features, planning and managing releases, researching and
+    implementing the latest .NET advancements into the framework, managing
+    technology upgrades, and maintaining the framework's documentation.
 
-### Our history
+    ### Our history
 
-We initiated the design and development of _Multinet Up_'s framework, with the
-first version released in 2014. We've open-sourced Routine, and turn their
-internal framework into the product it is today.
+    We initiated the design and development of _Multinet Up_'s framework, with the
+    first version released in 2014. We've open-sourced Routine, and turn their
+    internal framework into the product it is today.
 
-This 10 year journey has been invaluable in teaching us how to tackle the
-challenges of creating an open-source product, for which we'll always be
-grateful.
+    This 10 year journey has been invaluable in teaching us how to tackle the
+    challenges of creating an open-source product, for which we'll always be
+    grateful.
 
-::::
+    ::::
 
-#image
+  #image
 
-![Inventiv - Gazel - Website](images/projects/inventiv-gazel-website.png)
+  ![Inventiv - Gazel - Website](images/projects/inventiv-gazel-website.png)
 
-:::
+  :::
 
 ::
 
 ::block{color=black}
 
-:::columns{:itemWidths='["100%", "100ch"]'}
+  :::columns{:itemWidths='["100%", "100ch"]'}
 
-#text
+  #text
 
-::::h2{id="forward"}
-![forward logo](images/projects/fw-logo.png)
-::::
+    ::::h2{id="forward"}
+    ![forward logo](images/projects/fw-logo.png)
+    ::::
 
-We've built the integration gateway server for [Forward][]'s web app to allow
-their customers integrate with CRM and more.
+  We've built the integration gateway server for [Forward][]'s web app to allow
+  their customers integrate with CRM and more.
 
-::::bullet-list
+    ::::bullet-list
 
-- __Industry__: SalesTech
-- __Integrated Systems__: HubSpot, Zapier
-- __Project Management__: GitHub, Slack
+    - __Industry__: SalesTech
+    - __Integrated Systems__: HubSpot, Zapier
+    - __Project Management__: GitHub, Slack
 
-::::
+    ::::
 
-:include{content="contents/tech-stacks/forward.md"}
+  :include{content="contents/tech-stacks/forward.md"}
 
-:br
+  :br
 
-::::details
+    ::::details
 
-:::::summary
+      :::::summary
 
-Read more...
+      Read more...
 
-:::::
+      :::::
 
-[Forward][] is a sales enablement tool that empowers B2B companies to enhance
-their buyer engagement through digital sales rooms, shared with a single link.
+    [Forward][] is a sales enablement tool that empowers B2B companies to enhance
+    their buyer engagement through digital sales rooms, shared with a single link.
 
-Their product requires lots of integrations, particularly with CRM systems. This
-is where we came in. Currently, we are helping them establish an integration
-gateway, ensuring they can maintain their focus on enhencing the seller and
-buyer experience they provide.
+    Their product requires lots of integrations, particularly with CRM systems. This
+    is where we came in. Currently, we are helping them establish an integration
+    gateway, ensuring they can maintain their focus on enhencing the seller and
+    buyer experience they provide.
 
-### Our history
+    ### Our history
 
-We have collaborated on several projects with the Forward team, with some dating
-back to 2015, even before our collective was born. With this strong
-relationship, we are happy to support Forwardians in achieving their goals.
+    We have collaborated on several projects with the Forward team, with some dating
+    back to 2015, even before our collective was born. With this strong
+    relationship, we are happy to support Forwardians in achieving their goals.
 
-::::
+    ::::
 
-#image
+  #image
 
-![Forward - Gateway - ApiDoc](images/projects/forward-gateway-apidoc.png)
+  ![Forward - Gateway - ApiDoc](images/projects/forward-gateway-apidoc.png)
 
-:::
+  :::
 
 ::
 

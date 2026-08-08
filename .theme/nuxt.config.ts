@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       }
     },
     experimental: {
-      nativeSqlite: true
+      sqliteConnector: "native"
     }
   },
   components: {
@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     public: ".public"
   },
   experimental: {
-    payloadExtraction: false
+    payloadExtraction: true
   },
   features: {
     inlineStyles: false

@@ -4,14 +4,14 @@
 
 We are a team of software developers guided by our people-centric philosophy.
 
-:::bullet-list
+  :::bullet-list
 
-- Passionate
-- Efficient
-- Unconventional
-- Excellent
+  - Passionate
+  - Efficient
+  - Unconventional
+  - Excellent
 
-:::
+  :::
 
 ::
 
