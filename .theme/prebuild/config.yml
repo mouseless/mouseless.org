@@ -36,3 +36,5 @@ tasks:
       extension: .md
       source: ./
       target: ./.theme/content
+  - indent:
+      source: ./.theme/content

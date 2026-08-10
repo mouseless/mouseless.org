@@ -9,12 +9,12 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ::block{color=black}
 
-  :::banner
+:::banner
 
-  ## We are;
-  # A software developer collective.
+## We are;
+# A software developer collective.
 
-  :::
+:::
 
 ::
 

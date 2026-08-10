@@ -1,12 +1,12 @@
 ::details
 
-  :::summary
+:::summary
 
-  ##### [What business domains does Mouseless work in?]()
+##### [What business domains does Mouseless work in?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 We don't limit our services to certain business domains by definition. Our
 business domain is software development itself, and we offer our services to
@@ -19,13 +19,13 @@ E-Commerce and SaaS.
 
 ::details
 
-  :::summary
+:::summary
 
-  ##### [What technologies do you have experience in?]()
+##### [What technologies do you have experience in?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 It's widely accepted that empowering senior software developers to select their
 preferred tech stack tends to produce successful outcomes. Mouseless is no
@@ -42,13 +42,13 @@ We're actively exploring __Go__ and __Flutter__ as well.
 
 ::details
 
-  :::summary
+:::summary
 
-  ##### [What’s your pricing model?]()
+##### [What’s your pricing model?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 We operate on a pay-as-you-go basis, meaning clients pay for the work completed.
 This gives us the flexibility to handle technology upgrades freely without tight

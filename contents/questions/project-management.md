@@ -1,12 +1,12 @@
 ::details
 
-  :::summary
+:::summary
 
-  ##### [How do you work without deadlines?]()
+##### [How do you work without deadlines?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 In our experience, strict deadlines often indicate a lack of trust. To build
 trust, our initial offer is always a time-and-materials-based contract, allowing
@@ -25,13 +25,13 @@ time.
 
 ::details
 
-  :::summary
+:::summary
 
-  ##### [How does it differ from a turnkey project management style?]()
+##### [How does it differ from a turnkey project management style?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 It depends on what you mean by turnkey. If you mean having a fixed scope before
 we start working on a project, this is not our way of managing software
@@ -45,13 +45,13 @@ detailed analyses on the go.
 
 ::details
 
-  :::summary
+:::summary
 
-  ##### [Is there a support phase in iterative development approaches?]()
+##### [Is there a support phase in iterative development approaches?]()
 
-  :hr
+:hr
 
-  :::
+:::
 
 Yes. We see software development as continuous work that starts with a minimal
 scope and builds upon it in every iteration. What we do is create a minimum
