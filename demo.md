@@ -13,140 +13,140 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ## Banner
 
-  :::banner
+:::banner
 
-  ### Our Collective
+### Our Collective
 
-  Lorem **ipsum** dolor sit amet consectetur adipisicing elit.
+Lorem **ipsum** dolor sit amet consectetur adipisicing elit.
 
-  :::
+:::
 
 ## Box
 
-  :::box{title="Box Header" image-align="left"}
-  ---
-  image: images/what-we-do/sr.png
-  ---
+:::box{title="Box Header" image-align="left"}
+---
+image: images/what-we-do/sr.png
+---
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  :::
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
 
-  :::box{title="Box Header" image-align="right"}
-  ---
-  image: images/what-we-do/csd.png
-  ---
+:::box{title="Box Header" image-align="right"}
+---
+image: images/what-we-do/csd.png
+---
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  :::
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
 
 ## Bullet List
 
-  :::bullet-list{align=left}
+:::bullet-list{align=left}
 
-  - task 1
-  - task 2
+- task 1
+- task 2
 
-  :::
+:::
 
-  :::bullet-list{align=center}
+:::bullet-list{align=center}
 
-  - task 1
-  - task 2
+- task 1
+- task 2
 
-  :::
+:::
 
-  :::bullet-list{align=right}
+:::bullet-list{align=right}
 
-  - task 1
-  - task 2
+- task 1
+- task 2
 
-  :::
+:::
 
 ## Card
 
-  :::columns
+:::columns
 
-  #item-1
+#item-1
 
-    ::::card{image="images/who-we-are/efficient.png"}
+::::card{image="images/who-we-are/efficient.png"}
 
-    ### Lorem ipsum
+### Lorem ipsum
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
-    ::::
+::::
 
-  #item-2
+#item-2
 
-    ::::card{image="images/who-we-are/excellent.png"}
+::::card{image="images/who-we-are/excellent.png"}
 
-    ### Iusto fuga
+### Iusto fuga
 
-    Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
-    autem.
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
 
-    ::::
+::::
 
-  #item-3
+#item-3
 
-    ::::card{image="images/who-we-are/passionate.png"}
+::::card{image="images/who-we-are/passionate.png"}
 
-    ### Veritatis obcaecati
+### Veritatis obcaecati
 
-    Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
-    ::::
+::::
 
-  :::
+:::
 
-  :::columns{itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+:::columns{itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
 
-  #item-1
+#item-1
 
-    ::::card
+::::card
 
-    ### Lorem ipsum
+### Lorem ipsum
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-    numquam blanditiis harum quisquam eius sed odit fugiat
-    ::::
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat
+::::
 
-  #item-2
+#item-2
 
-    ::::card
+::::card
 
-    ### Iusto fuga
+### Iusto fuga
 
-    Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
-    autem.
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
 
-    ::::
+::::
 
-  :::
+:::
 
 ## Columns
 
-  :::columns
+:::columns
 
-  #item-1
+#item-1
 
-    ::::box{title="Box 1"}
+::::box{title="Box 1"}
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit
+Lorem ipsum dolor sit amet consectetur adipisicing elit
 
-    ::::
+::::
 
-  #item-2
+#item-2
 
-    ::::box{title="Box 2"}
+::::box{title="Box 2"}
 
-    Maxime mollitia, molestiae quas vel sint commodi repudiandae
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
-    ::::
+::::
 
-  :::
+:::
 
 ## Contact Form
 
@@ -154,35 +154,35 @@ seo-image: images/logo-profile-mark-primary-500px.png
 
 ## Diagrams
 
-  :::columns
+:::columns
 
-  #diagram-1
+#diagram-1
 
-  ```mermaid
-  flowchart TB
-      subgraph C
-        D
-        E
-      end
+```mermaid
+flowchart TB
+    subgraph C
+      D
+      E
+    end
 
-      A --> B --> D
-      B --> E
-  ```
+    A --> B --> D
+    B --> E
+```
 
-  #diagram-2
+#diagram-2
 
-  ```mermaid
-  flowchart LR
-      subgraph C
-        D
-        E
-      end
+```mermaid
+flowchart LR
+    subgraph C
+      D
+      E
+    end
 
-      A --> B --> D
-      B --> E
-  ```
+    A --> B --> D
+    B --> E
+```
 
-  :::
+:::
 
 :include{content="contents/demo.md"}
 
@@ -242,73 +242,73 @@ _Italic Text_
 
 ## Slider
 
-  :::slider{height="15ch"}
+:::slider{height="15ch"}
 
-  #slide-1
+#slide-1
 
-  ### Slide 1
+### Slide 1
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-  optio, eaque rerum!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum!
 
-  #slide-2
+#slide-2
 
-  ### Slide 2
+### Slide 2
 
-  Provident similique accusantium nemo autem. Veritatis
-  obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-  nihil, eveniet aliquid
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid
 
-  :::
+:::
 
 ## Steps
 
-  :::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="20ch"}
+:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="20ch"}
 
-  #step-1
+#step-1
 
-    ::::card
+::::card
 
-    ### Step 1
+### Step 1
 
-    Step 1 body
+Step 1 body
 
-    ::::
+::::
 
-  #step-2
+#step-2
 
-    ::::card
+::::card
 
-    ### Step 2
+### Step 2
 
-    Provident similique accusantium nemo autem. Veritatis
-    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-    tenetur error, harum nesciunt ipsum debitis quas aliquid.
-    Provident similique accusantium nemo autem. Veritatis
-    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-    tenetur error, harum nesciunt ipsum debitis quas aliquid.
-    Provident similique accusantium nemo autem. Veritatis
-    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-    tenetur error, harum nesciunt ipsum debitis quas aliquid.
-    Provident similique accusantium nemo autem. Veritatis
-    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
 
-    ::::
+::::
 
-  #step-3
+#step-3
 
-  ### Step 3
+### Step 3
 
-  Step 3 body
+Step 3 body
 
-  :::
+:::
 
 ::
 
