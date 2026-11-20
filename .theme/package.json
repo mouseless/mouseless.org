@@ -21,7 +21,7 @@
     "@nuxt/eslint": "1.17.0",
     "@pinia/nuxt": "0.11.3",
     "log-symbols": "7.0.1",
-    "nuxt": "4.5.2"
+    "nuxt": "4.6.4"
   },
   "dependencies": {
     "mermaid": "12.2.0",
